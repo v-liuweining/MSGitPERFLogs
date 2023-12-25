@@ -1,0 +1,56 @@
+14:05:09.938981 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/bin
+14:05:09.954007 git.c:535               trace: built-in: git pull
+14:05:31.751082 run-command.c:659       trace: run_command: git fetch --update-head-ok
+14:05:31.766599 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:05:31.766599 git.c:535               trace: built-in: git fetch --update-head-ok
+14:05:54.235336 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703483639-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+14:05:54.251031 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703483639-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607933
+14:05:54.251031 run-command.c:659       trace: run_command: git gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+14:05:54.266641 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:05:54.266641 git.c:824               trace: exec: git-gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+14:05:54.266641 run-command.c:659       trace: run_command: git-gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+14:05:54.282242 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:05:56.141375 run-command.c:659       trace: run_command: 'git credential-manager get'
+14:05:56.204566 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:05:56.204566 git.c:824               trace: exec: git-credential-manager get
+14:05:56.204566 run-command.c:659       trace: run_command: git-credential-manager get
+14:05:56.297843 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:05:56.297843 git.c:535               trace: built-in: git config --null --list
+14:05:57.907448 run-command.c:659       trace: run_command: 'git credential-manager store'
+14:05:57.954155 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:05:57.954155 git.c:824               trace: exec: git-credential-manager store
+14:05:57.954155 run-command.c:659       trace: run_command: git-credential-manager store
+14:05:58.032204 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:05:58.032204 git.c:535               trace: built-in: git config --null --list
+14:05:58.157162 run-command.c:659       trace: run_command: GIT_DIR=.git git remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+14:05:58.157162 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:05:58.157162 git.c:824               trace: exec: git-remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+14:05:58.157162 run-command.c:659       trace: run_command: git-remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+14:05:58.182955 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:06:00.032211 run-command.c:659       trace: run_command: 'git credential-manager get'
+14:06:00.094626 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:06:00.094626 git.c:824               trace: exec: git-credential-manager get
+14:06:00.094626 run-command.c:659       trace: run_command: git-credential-manager get
+14:06:00.172621 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:06:00.172621 git.c:535               trace: built-in: git config --null --list
+14:06:01.047802 run-command.c:659       trace: run_command: 'git credential-manager store'
+14:06:01.094757 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:06:01.094757 git.c:824               trace: exec: git-credential-manager store
+14:06:01.094757 run-command.c:659       trace: run_command: git-credential-manager store
+14:06:01.172793 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:06:01.172793 git.c:535               trace: built-in: git config --null --list
+warning: fetch normally indicates which branches had a forced update,
+but that check has been disabled; to re-enable, use '--show-forced-updates'
+flag or run 'git config fetch.showForcedUpdates true'
+14:06:40.251116 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703483639-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+14:06:40.251116 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703483639-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607933
+14:06:40.251116 run-command.c:1523      run_processes_parallel: preparing to run up to 1 tasks
+14:06:40.266715 run-command.c:1551      run_processes_parallel: done
+14:06:40.266715 run-command.c:52        trace: run_command: running exit handler for pid 7708
+14:06:40.298002 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703483639-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+14:06:40.298002 run-command.c:659       trace: run_command: git merge FETCH_HEAD
+14:06:40.298002 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+14:06:40.313652 git.c:535               trace: built-in: git merge FETCH_HEAD
+14:06:40.313652 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703483639-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+14:06:59.985236 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.43.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703483639-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+Already up to date.
