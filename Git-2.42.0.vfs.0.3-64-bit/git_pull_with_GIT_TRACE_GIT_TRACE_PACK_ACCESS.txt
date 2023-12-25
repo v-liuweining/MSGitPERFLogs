@@ -1,0 +1,78 @@
+CMD:
+	set GIT_TRACE=1
+	set GIT_TRACE_PACK_ACCESS=1
+	git pull
+
+13:06:33.360233 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/bin
+13:06:33.375925 git.c:535               trace: built-in: git pull
+13:06:56.219489 run-command.c:659       trace: run_command: git fetch --update-head-ok
+13:06:56.235110 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:06:56.235110 git.c:535               trace: built-in: git fetch --update-head-ok
+13:07:19.000737 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+13:07:19.000737 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607933
+13:07:19.000737 run-command.c:659       trace: run_command: git gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+13:07:19.000737 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:19.016288 git.c:824               trace: exec: git-gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+13:07:19.016288 run-command.c:659       trace: run_command: git-gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+13:07:19.032025 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:20.735257 run-command.c:659       trace: run_command: 'git credential-manager get'
+13:07:20.782055 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:20.782055 git.c:824               trace: exec: git-credential-manager get
+13:07:20.782055 run-command.c:659       trace: run_command: git-credential-manager get
+13:07:20.891679 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:20.891679 git.c:535               trace: built-in: git config --null --list
+13:07:22.376168 run-command.c:659       trace: run_command: 'git credential-manager store'
+13:07:22.438584 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:22.438584 git.c:824               trace: exec: git-credential-manager store
+13:07:22.438584 run-command.c:659       trace: run_command: git-credential-manager store
+13:07:22.516343 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:22.516343 git.c:535               trace: built-in: git config --null --list
+13:07:22.625830 run-command.c:659       trace: run_command: GIT_DIR=.git git remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+13:07:22.641377 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:22.641377 git.c:824               trace: exec: git-remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+13:07:22.641377 run-command.c:659       trace: run_command: git-remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+13:07:22.657048 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:24.453868 run-command.c:659       trace: run_command: 'git credential-manager get'
+13:07:24.500751 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:24.500751 git.c:824               trace: exec: git-credential-manager get
+13:07:24.500751 run-command.c:659       trace: run_command: git-credential-manager get
+13:07:24.578847 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:24.578847 git.c:535               trace: built-in: git config --null --list
+13:07:25.454103 run-command.c:659       trace: run_command: 'git credential-manager store'
+13:07:25.516393 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:25.516393 git.c:824               trace: exec: git-credential-manager store
+13:07:25.516393 run-command.c:659       trace: run_command: git-credential-manager store
+13:07:25.594487 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:07:25.594487 git.c:535               trace: built-in: git config --null --list
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25956086
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25955235
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25956311
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25954723
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 26103786
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 27228452
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25157024
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25070926
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25158119
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25153557
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25872271
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25399885
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25157463
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 27520961
+13:07:25.703784 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25158287
+warning: fetch normally indicates which branches had a forced update,
+but that check has been disabled; to re-enable, use '--show-forced-updates'
+flag or run 'git config fetch.showForcedUpdates true'
+13:08:10.547621 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+13:08:10.547621 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607933
+13:08:10.547621 run-command.c:1523      run_processes_parallel: preparing to run up to 1 tasks
+13:08:10.563276 run-command.c:1551      run_processes_parallel: done
+13:08:10.563276 run-command.c:52        trace: run_command: running exit handler for pid 4704
+13:08:10.578790 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+13:08:10.594486 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607617
+13:08:10.594486 run-command.c:659       trace: run_command: git merge FETCH_HEAD
+13:08:10.594486 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:08:10.610048 git.c:535               trace: built-in: git merge FETCH_HEAD
+13:08:10.610048 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+13:08:36.360199 packfile.c:1662         C:/Users/liuwn/Desktop/Git-2.42.0.vfs.0.3-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703479294-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+Already up to date.
