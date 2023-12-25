@@ -1,0 +1,764 @@
+14:41:08.282353 common-main.c:49             | d0 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:41:08.282353 common-main.c:50             | d0 | main                     | start        |     |  0.006554 |           |              | git.exe pull
+14:41:08.297885 ..._win32_process_info.c:118 | d0 | main                     | data_json    | r0  |  0.016061 |  0.016061 | process      | windows/ancestry:["git.exe","cmd.exe","explorer.exe"]
+14:41:08.305335 repository.c:136             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:41:08.305335 git.c:532                    | d0 | main                     | cmd_name     |     |           |           |              | pull (pull)
+14:41:08.305335 read-cache.c:2468            | d0 | main                     | region_enter | r1  |  0.024667 |           | index        | label:do_read_index .git/index
+14:41:08.305335 read-cache.c:2128            | d0 | th01:load_index_extensio | thread_start |     |  0.025053 |           |              | 
+14:41:08.305335 read-cache.c:1853            | d0 | th01:load_index_extensio | region_enter |     |  0.025098 |           | index        | label:read/extension/cache_tree
+14:41:08.305335 cache-tree.c:688             | d0 | th01:load_index_extensio | region_enter | r1  |  0.025118 |           | cache_tree   | ..label:read
+14:41:08.305335 read-cache.c:2211            | d0 | th02:load_cache_entries  | thread_start |     |  0.025212 |           |              | 
+14:41:08.305335 read-cache.c:2211            | d0 | th03:load_cache_entries  | thread_start |     |  0.025324 |           |              | 
+14:41:08.305335 read-cache.c:2211            | d0 | th04:load_cache_entries  | thread_start |     |  0.025444 |           |              | 
+14:41:08.305335 read-cache.c:2211            | d0 | th05:load_cache_entries  | thread_start |     |  0.025603 |           |              | 
+14:41:08.305335 read-cache.c:2211            | d0 | th06:load_cache_entries  | thread_start |     |  0.025653 |           |              | 
+14:41:08.305335 cache-tree.c:690             | d0 | th01:load_index_extensio | region_leave | r1  |  0.032363 |  0.007245 | cache_tree   | ..label:read
+14:41:08.305335 read-cache.c:1855            | d0 | th01:load_index_extensio | data         |     |  0.032413 |  0.007315 | index        | ..read/extension/cache_tree/bytes:767846
+14:41:08.305335 read-cache.c:1856            | d0 | th01:load_index_extensio | region_leave |     |  0.032425 |  0.007327 | index        | label:read/extension/cache_tree
+14:41:08.305335 fsmonitor.c:94               | d0 | th01:load_index_extensio | data         |     |  0.032445 |  0.007392 | index        | extension/fsmn/read/token:builtin:0.9148.20231225T061501.313149Z:4
+14:41:08.305335 read-cache.c:2130            | d0 | th01:load_index_extensio | thread_exit  |     |  0.032554 |  0.007501 |              | 
+14:41:08.329242 read-cache.c:2220            | d0 | th06:load_cache_entries  | thread_exit  |     |  0.055694 |  0.030041 |              | 
+14:41:08.344882 read-cache.c:2220            | d0 | th03:load_cache_entries  | thread_exit  |     |  0.064605 |  0.039281 |              | 
+14:41:08.344882 read-cache.c:2220            | d0 | th04:load_cache_entries  | thread_exit  |     |  0.066510 |  0.041066 |              | 
+14:41:08.344882 read-cache.c:2220            | d0 | th02:load_cache_entries  | thread_exit  |     |  0.067905 |  0.042693 |              | 
+14:41:08.344882 read-cache.c:2220            | d0 | th05:load_cache_entries  | thread_exit  |     |  0.070239 |  0.044636 |              | 
+14:41:08.360495 read-cache.c:2414            | d0 | main                     | data         | r1  |  0.077282 |  0.052615 | index        | ..read/version:4
+14:41:08.360495 read-cache.c:2416            | d0 | main                     | data         | r1  |  0.077376 |  0.052709 | index        | ..read/cache_nr:1074121
+14:41:08.360495 read-cache.c:2473            | d0 | main                     | region_leave | r1  |  0.077394 |  0.052727 | index        | label:do_read_index .git/index
+14:41:08.376285 fsmonitor-ipc.c:80           | d0 | main                     | region_enter |     |  0.105536 |           | fsm_client   | label:query
+14:41:08.376285 fsmonitor-ipc.c:81           | d0 | main                     | data         |     |  0.105623 |  0.000087 | fsm_client   | ..query/command:builtin:0.9148.20231225T061501.313149Z:4
+14:41:08.376285 ...imple-ipc/ipc-win32.c:202 | d0 | main                     | region_enter |     |  0.105657 |           | ipc-client   | ..label:try-connect
+14:41:08.376285 ...imple-ipc/ipc-win32.c:203 | d0 | main                     | data         |     |  0.105669 |  0.000012 | ipc-client   | ....try-connect/path:.git/fsmonitor--daemon.ipc
+14:41:08.376285 ...imple-ipc/ipc-win32.c:211 | d0 | main                     | data         |     |  0.106038 |  0.000381 | ipc-client   | ....try-connect/state:0
+14:41:08.376285 ...imple-ipc/ipc-win32.c:213 | d0 | main                     | region_leave |     |  0.106065 |  0.000408 | ipc-client   | ..label:try-connect
+14:41:08.376285 ...imple-ipc/ipc-win32.c:243 | d0 | main                     | region_enter |     |  0.106081 |           | ipc-client   | ..label:send-command
+14:41:08.391339 ...imple-ipc/ipc-win32.c:262 | d0 | main                     | region_leave |     |  0.108028 |  0.001947 | ipc-client   | ..label:send-command
+14:41:08.391339 fsmonitor-ipc.c:93           | d0 | main                     | data         |     |  0.108073 |  0.002537 | fsm_client   | ..query/response-length:37988
+14:41:08.391339 fsmonitor-ipc.c:131          | d0 | main                     | region_leave |     |  0.108089 |  0.002553 | fsm_client   | label:query
+14:41:08.391339 fsmonitor.c:439              | d0 | main                     | region_enter | r1  |  0.108101 |           | fsmonitor    | label:apply_results
+14:41:08.422613 fsmonitor.c:469              | d0 | main                     | data         | r1  |  0.143498 |  0.035397 | fsmonitor    | ..apply_count:826
+14:41:08.422613 fsmonitor.c:500              | d0 | main                     | region_leave | r1  |  0.143551 |  0.035450 | fsmonitor    | label:apply_results
+14:42:01.719644 run-command.c:721            | d0 | main                     | child_start  |     | 53.448756 |           |              | [ch0] class:? argv:[git fetch --update-head-ok]
+14:42:01.735335 common-main.c:49             | d1 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:42:01.750899 common-main.c:50             | d1 | main                     | start        |     |  0.005936 |           |              | git fetch --update-head-ok
+14:42:01.750899 ..._win32_process_info.c:118 | d1 | main                     | data_json    | r0  |  0.016993 |  0.016993 | process      | windows/ancestry:["git.exe","git.exe","cmd.exe","explorer.exe"]
+14:42:01.750899 repository.c:136             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:42:01.750899 git.c:532                    | d1 | main                     | cmd_name     |     |           |           |              | fetch (pull/fetch)
+14:42:01.750899 read-cache.c:2468            | d1 | main                     | region_enter | r1  |  0.019565 |           | index        | label:do_read_index .git/index
+14:42:01.750899 read-cache.c:2128            | d1 | th01:load_index_extensio | thread_start |     |  0.020009 |           |              | 
+14:42:01.750899 read-cache.c:1853            | d1 | th01:load_index_extensio | region_enter |     |  0.020044 |           | index        | label:read/extension/cache_tree
+14:42:01.750899 cache-tree.c:688             | d1 | th01:load_index_extensio | region_enter | r1  |  0.020074 |           | cache_tree   | ..label:read
+14:42:01.750899 read-cache.c:2211            | d1 | th02:load_cache_entries  | thread_start |     |  0.020167 |           |              | 
+14:42:01.750899 read-cache.c:2211            | d1 | th03:load_cache_entries  | thread_start |     |  0.020348 |           |              | 
+14:42:01.750899 read-cache.c:2211            | d1 | th04:load_cache_entries  | thread_start |     |  0.020455 |           |              | 
+14:42:01.750899 read-cache.c:2211            | d1 | th05:load_cache_entries  | thread_start |     |  0.020595 |           |              | 
+14:42:01.750899 read-cache.c:2211            | d1 | th06:load_cache_entries  | thread_start |     |  0.020635 |           |              | 
+14:42:01.766518 cache-tree.c:690             | d1 | th01:load_index_extensio | region_leave | r1  |  0.030605 |  0.010531 | cache_tree   | ..label:read
+14:42:01.766518 read-cache.c:1855            | d1 | th01:load_index_extensio | data         |     |  0.030708 |  0.010664 | index        | ..read/extension/cache_tree/bytes:767846
+14:42:01.766518 read-cache.c:1856            | d1 | th01:load_index_extensio | region_leave |     |  0.030730 |  0.010686 | index        | label:read/extension/cache_tree
+14:42:01.766518 fsmonitor.c:94               | d1 | th01:load_index_extensio | data         |     |  0.030758 |  0.010749 | index        | extension/fsmn/read/token:builtin:0.9148.20231225T061501.313149Z:4
+14:42:01.766518 read-cache.c:2130            | d1 | th01:load_index_extensio | thread_exit  |     |  0.030871 |  0.010862 |              | 
+14:42:01.797770 read-cache.c:2220            | d1 | th02:load_cache_entries  | thread_exit  |     |  0.059306 |  0.039139 |              | 
+14:42:01.797770 read-cache.c:2220            | d1 | th03:load_cache_entries  | thread_exit  |     |  0.059815 |  0.039467 |              | 
+14:42:01.797770 read-cache.c:2220            | d1 | th04:load_cache_entries  | thread_exit  |     |  0.064858 |  0.044403 |              | 
+14:42:01.797770 read-cache.c:2220            | d1 | th06:load_cache_entries  | thread_exit  |     |  0.066189 |  0.045554 |              | 
+14:42:01.797770 read-cache.c:2220            | d1 | th05:load_cache_entries  | thread_exit  |     |  0.066371 |  0.045776 |              | 
+14:42:01.813499 read-cache.c:2414            | d1 | main                     | data         | r1  |  0.073082 |  0.053517 | index        | ..read/version:4
+14:42:01.813499 read-cache.c:2416            | d1 | main                     | data         | r1  |  0.073112 |  0.053547 | index        | ..read/cache_nr:1074121
+14:42:01.813499 read-cache.c:2473            | d1 | main                     | region_leave | r1  |  0.073129 |  0.053564 | index        | label:do_read_index .git/index
+14:42:01.844702 fsmonitor-ipc.c:80           | d1 | main                     | region_enter |     |  0.108278 |           | fsm_client   | label:query
+14:42:01.844702 fsmonitor-ipc.c:81           | d1 | main                     | data         |     |  0.108354 |  0.000076 | fsm_client   | ..query/command:builtin:0.9148.20231225T061501.313149Z:4
+14:42:01.844702 ...imple-ipc/ipc-win32.c:202 | d1 | main                     | region_enter |     |  0.108373 |           | ipc-client   | ..label:try-connect
+14:42:01.844702 ...imple-ipc/ipc-win32.c:203 | d1 | main                     | data         |     |  0.108384 |  0.000011 | ipc-client   | ....try-connect/path:.git/fsmonitor--daemon.ipc
+14:42:01.844702 ...imple-ipc/ipc-win32.c:211 | d1 | main                     | data         |     |  0.108706 |  0.000333 | ipc-client   | ....try-connect/state:0
+14:42:01.844702 ...imple-ipc/ipc-win32.c:213 | d1 | main                     | region_leave |     |  0.108730 |  0.000357 | ipc-client   | ..label:try-connect
+14:42:01.844702 ...imple-ipc/ipc-win32.c:243 | d1 | main                     | region_enter |     |  0.108743 |           | ipc-client   | ..label:send-command
+14:42:01.844702 ...imple-ipc/ipc-win32.c:262 | d1 | main                     | region_leave |     |  0.110315 |  0.001572 | ipc-client   | ..label:send-command
+14:42:01.844702 fsmonitor-ipc.c:93           | d1 | main                     | data         |     |  0.110355 |  0.002077 | fsm_client   | ..query/response-length:37988
+14:42:01.844702 fsmonitor-ipc.c:131          | d1 | main                     | region_leave |     |  0.110374 |  0.002096 | fsm_client   | label:query
+14:42:01.844702 fsmonitor.c:439              | d1 | main                     | region_enter | r1  |  0.110388 |           | fsmonitor    | label:apply_results
+14:42:01.891519 fsmonitor.c:469              | d1 | main                     | data         | r1  |  0.152363 |  0.041975 | fsmonitor    | ..apply_count:826
+14:42:01.891519 fsmonitor.c:500              | d1 | main                     | region_leave | r1  |  0.152427 |  0.042039 | fsmonitor    | label:apply_results
+14:42:58.094473 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+14:42:58.094473 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607933
+14:42:58.094473 run-command.c:721            | d1 | main                     | child_start  |     | 56.350514 |           |              | [ch0] class:subprocess argv:[git gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server]
+14:42:58.110070 common-main.c:49             | d2 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:42:58.110070 common-main.c:50             | d2 | main                     | start        |     |  0.009209 |           |              | git gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+14:42:58.125771 ..._win32_process_info.c:118 | d2 | main                     | data_json    | r0  |  0.025992 |  0.025992 | process      | windows/ancestry:["git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:42:58.125771 git.c:817                    | d2 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_)
+14:42:58.125771 run-command.c:721            | d2 | main                     | child_start  |     |  0.027934 |           |              | [ch0] class:dashed argv:[git-gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server]
+14:42:58.156918 common-main.c:49             | d3 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:42:58.156918 common-main.c:50             | d3 | main                     | start        |     |  0.007708 |           |              | git-gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+14:42:58.172557 ..._win32_process_info.c:118 | d3 | main                     | data_json    | r0  |  0.025025 |  0.025025 | process      | windows/ancestry:["git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:42:58.172557 gvfs-helper.c:4182           | d3 | main                     | cmd_name     |     |           |           |              | gvfs-helper (pull/fetch/_run_dashed_/gvfs-helper)
+14:42:58.172557 repository.c:136             | d3 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:42:58.172557 gvfs-helper.c:4077           | d3 | main                     | cmd_mode     |     |           |           |              | server
+14:42:58.172557 gvfs-helper.c:1335           | d3 | main                     | data         |     |  0.028247 |  0.028247 | gvfs-helper  | remote/url:https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+14:42:58.172557 gvfs-helper.c:1371           | d3 | main                     | data         |     |  0.030870 |  0.030870 | gvfs-helper  | cache/url:unset
+14:42:58.172557 gvfs-helper-client.c:539     | d1 | main                     | region_enter | r1  | 56.441789 |           | gh-client    | label:objects/prefetch
+14:42:58.172557 gvfs-helper-client.c:540     | d1 | main                     | data         | r1  | 56.441824 |  0.000035 | gh-client    | ..prefetch/since:0
+14:42:58.188168 gvfs-helper.c:1151           | d3 | main                     | region_enter |     |  0.032664 |           | gvfs-helper  | label:(main)
+14:42:58.188168 http.c:689              == Info:   Trying 13.107.42.18:443...
+14:42:58.188168 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+14:42:58.188168 http.c:689              == Info: ALPN, offering http/1.1
+14:42:58.203794 http.c:689              == Info:  CAfile: C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+14:42:58.203794 http.c:689              == Info:  CApath: none
+14:42:58.203794 http.c:689              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+14:42:58.840430 http.c:689              == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+14:42:58.840430 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Certificate (11):
+14:42:58.840430 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+14:42:58.840430 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server finished (14):
+14:42:58.840430 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+14:42:58.840430 http.c:689              == Info: TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+14:42:58.840430 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Finished (20):
+14:42:59.057638 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Finished (20):
+14:42:59.057638 http.c:689              == Info: SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+14:42:59.057638 http.c:689              == Info: ALPN, server accepted to use http/1.1
+14:42:59.057638 http.c:689              == Info: Server certificate:
+14:42:59.057638 http.c:689              == Info:  subject: C=US; ST=WA; L=Redmond; O=Microsoft Corporation; CN=visualstudio.com
+14:42:59.057638 http.c:689              == Info:  start date: Dec 23 06:01:12 2023 GMT
+14:42:59.057638 http.c:689              == Info:  expire date: Jun 20 06:01:12 2024 GMT
+14:42:59.057638 http.c:689              == Info:  subjectAltName: host "ointprotocol.visualstudio.com" matched cert's "*.visualstudio.com"
+14:42:59.057638 http.c:689              == Info:  issuer: C=US; O=Microsoft Corporation; CN=Microsoft Azure RSA TLS Issuing CA 03
+14:42:59.057638 http.c:689              == Info:  SSL certificate verify ok.
+14:42:59.057638 http.c:636              => Send header, 0000000265 bytes (0x00000109)
+14:42:59.057638 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/gvfs/prefetch?lastPackTimestamp=1703484905 HTTP/1.1
+14:42:59.057638 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+14:42:59.057638 http.c:648              => Send header: User-Agent: git/2.36.0.vfs.0.0
+14:42:59.057638 http.c:648              => Send header: X-TFS-FedAuthRedirect: Suppress
+14:42:59.057638 http.c:648              => Send header: Pragma: no-cache
+14:42:59.057638 http.c:648              => Send header: Accept: application/x-gvfs-timestamped-packfiles-indexes
+14:42:59.057638 http.c:648              => Send header:
+14:42:59.576598 http.c:689              == Info: Mark bundle as not supporting multiuse
+14:42:59.576598 http.c:636              <= Recv header, 0000000027 bytes (0x0000001b)
+14:42:59.576598 http.c:648              <= Recv header: HTTP/1.1 401 Unauthorized
+14:42:59.576598 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+14:42:59.576598 http.c:648              <= Recv header: Cache-Control: private
+14:42:59.576598 http.c:636              <= Recv header, 0000000021 bytes (0x00000015)
+14:42:59.576598 http.c:648              <= Recv header: Content-Length: 100
+14:42:59.576598 http.c:636              <= Recv header, 0000000041 bytes (0x00000029)
+14:42:59.576598 http.c:648              <= Recv header: Content-Type: text/plain; charset=utf-8
+14:42:59.576598 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+14:42:59.576598 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+14:42:59.576598 http.c:636              <= Recv header, 0000000115 bytes (0x00000073)
+14:42:59.576598 http.c:648              <= Recv header: WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+14:42:59.576598 http.c:636              <= Recv header, 0000000076 bytes (0x0000004c)
+14:42:59.576598 http.c:648              <= Recv header: WWW-Authenticate: Basic realm="https://tfsprodwus22.app.visualstudio.com/"
+14:42:59.576598 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:42:59.576598 http.c:648              <= Recv header: WWW-Authenticate: TFS-Federated
+14:42:59.576598 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+14:42:59.576598 http.c:648              <= Recv header: X-TFS-ProcessId: 2c6e9e4d-1c44-4db5-bd31-3fe417501e0d
+14:42:59.576598 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:42:59.576598 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+14:42:59.576598 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+14:42:59.576598 http.c:648              <= Recv header: ActivityId: 8bdb87d7-2ae9-4b92-9f79-9187bdb703be
+14:42:59.576598 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+14:42:59.576598 http.c:648              <= Recv header: X-TFS-Session: 8bdb87d7-2ae9-4b92-9f79-9187bdb703be
+14:42:59.576598 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+14:42:59.576598 http.c:648              <= Recv header: X-VSS-E2EID: 8bdb87d7-2ae9-4b92-9f79-9187bdb703be
+14:42:59.576598 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:42:59.576598 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+14:42:59.576598 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+14:42:59.576598 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+14:42:59.576598 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:42:59.576598 http.c:648              <= Recv header: X-TFS-FedAuthRealm: https://tfsprodwus22.app.visualstudio.com/
+14:42:59.576598 http.c:636              <= Recv header, 0000000061 bytes (0x0000003d)
+14:42:59.576598 http.c:648              <= Recv header: X-TFS-FedAuthIssuer: https://ointprotocol.visualstudio.com/
+14:42:59.576598 http.c:636              <= Recv header, 0000000075 bytes (0x0000004b)
+14:42:59.576598 http.c:648              <= Recv header: X-VSS-AuthorizationEndpoint: https://ointprotocol.vssps.visualstudio.com/
+14:42:59.576598 http.c:636              <= Recv header, 0000000060 bytes (0x0000003c)
+14:42:59.576598 http.c:648              <= Recv header: X-VSS-ResourceTenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
+14:42:59.576598 http.c:636              <= Recv header, 0000000710 bytes (0x000002c6)
+14:42:59.576598 http.c:648              <= Recv header: X-TFS-SoapException: %3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csoap%3AEnvelope%20xmlns%3Asoap%3D%22http%3A%2F%2Fwww.w3.org%2F2003%2F05%2Fsoap-envelope%22%3E%3Csoap%3ABody%3E%3Csoap%3AFault%3E%3Csoap%3ACode%3E%3Csoap%3AValue%3Esoap%3AReceiver%3C%2Fsoap%3AValue%3E%3Csoap%3ASubcode%3E%3Csoap%3AValue%3EUnauthorizedRequestException%3C%2Fsoap%3AValue%3E%3C%2Fsoap%3ASubcode%3E%3C%2Fsoap%3ACode%3E%3Csoap%3AReason%3E%3Csoap%3AText%20xml%3Alang%3D%22en%22%3ETF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.%3C%2Fsoap%3AText%3E%3C%2Fsoap%3AReason%3E%3C%2Fsoap%3AFault%3E%3C%2Fsoap%3ABody%3E%3C%2Fsoap%3AEnvelope%3E
+14:42:59.576598 http.c:636              <= Recv header, 0000000148 bytes (0x00000094)
+14:42:59.576598 http.c:648              <= Recv header: X-TFS-ServiceError: TF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.
+14:42:59.576598 http.c:636              <= Recv header, 0000000079 bytes (0x0000004f)
+14:42:59.576598 http.c:648              <= Recv header: X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+14:42:59.576598 http.c:636              <= Recv header, 0000000571 bytes (0x0000023b)
+14:42:59.576598 http.c:648              <= Recv header: X-TFS-FedAuthRedirect: https://spsprodwus21.vssps.visualstudio.com/_signin?realm=ointprotocol.visualstudio.com&reply_to=https%3A%2F%2Fointprotocol.visualstudio.com%2FGendoxData%2F_git%2FGendoxData%2Fgvfs%2Fprefetch%3FlastPackTimestamp%3D1703484905&redirect=1&hid=5fe04b63-037b-40a0-bb74-59bff9bb8bf0&context=eyJodCI6MiwiaGlkIjoiYWM2N2Y0ZjMtN2YzNy00ZmQ0LTlmZDItM2E2YzY1ZDMzZWQ4IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+14:42:59.576598 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+14:42:59.576598 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+14:42:59.576598 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+14:42:59.576598 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+14:42:59.576598 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:42:59.576598 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+14:42:59.576598 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+14:42:59.576598 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+14:42:59.576598 http.c:636              <= Recv header, 0000000102 bytes (0x00000066)
+14:42:59.576598 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: EC5AE63399044B40AAD84E3E0CBF2FC3 Ref B: ATAEDGE1506 Ref C: 2023-12-25T06:42:59Z
+14:42:59.576598 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+14:42:59.576598 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 06:42:58 GMT
+14:42:59.576598 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+14:42:59.576598 http.c:648              <= Recv header:
+14:42:59.576598 http.c:689              == Info: Ignoring the response-body
+14:42:59.576598 http.c:689              == Info: Connection #0 to host ointprotocol.visualstudio.com left intact
+14:42:59.576598 http.c:689              == Info: Issue another request to this URL: 'https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData/gvfs/prefetch?lastPackTimestamp=1703484905'
+14:42:59.576598 http.c:689              == Info: Found bundle for host ointprotocol.visualstudio.com: 0x2181a4a9a90 [serially]
+14:42:59.576598 http.c:689              == Info: Re-using existing connection! (#0) with host ointprotocol.visualstudio.com
+14:42:59.576598 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+14:42:59.576598 http.c:689              == Info: Server auth using Basic with user ''
+14:42:59.576598 http.c:636              => Send header, 0000000292 bytes (0x00000124)
+14:42:59.576598 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/gvfs/prefetch?lastPackTimestamp=1703484905 HTTP/1.1
+14:42:59.576598 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+14:42:59.576598 http.c:648              => Send header: Authorization: Basic <redacted>
+14:42:59.576598 http.c:648              => Send header: User-Agent: git/2.36.0.vfs.0.0
+14:42:59.576598 http.c:648              => Send header: X-TFS-FedAuthRedirect: Suppress
+14:42:59.576598 http.c:648              => Send header: Pragma: no-cache
+14:42:59.576598 http.c:648              => Send header: Accept: application/x-gvfs-timestamped-packfiles-indexes
+14:42:59.576598 http.c:648              => Send header:
+14:42:59.916939 http.c:689              == Info: Mark bundle as not supporting multiuse
+14:42:59.916939 http.c:636              <= Recv header, 0000000027 bytes (0x0000001b)
+14:42:59.916939 http.c:648              <= Recv header: HTTP/1.1 401 Unauthorized
+14:42:59.916939 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+14:42:59.916939 http.c:648              <= Recv header: Cache-Control: private
+14:42:59.916939 http.c:636              <= Recv header, 0000000021 bytes (0x00000015)
+14:42:59.916939 http.c:648              <= Recv header: Content-Length: 100
+14:42:59.916939 http.c:636              <= Recv header, 0000000041 bytes (0x00000029)
+14:42:59.916939 http.c:648              <= Recv header: Content-Type: text/plain; charset=utf-8
+14:42:59.916939 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+14:42:59.916939 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+14:42:59.916939 http.c:636              <= Recv header, 0000000115 bytes (0x00000073)
+14:42:59.916939 http.c:648              <= Recv header: WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+14:42:59.916939 http.c:689              == Info: Authentication problem. Ignoring this.
+14:42:59.916939 http.c:636              <= Recv header, 0000000076 bytes (0x0000004c)
+14:42:59.916939 http.c:648              <= Recv header: WWW-Authenticate: Basic realm="https://tfsprodwus22.app.visualstudio.com/"
+14:42:59.916939 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:42:59.916939 http.c:648              <= Recv header: WWW-Authenticate: TFS-Federated
+14:42:59.916939 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+14:42:59.916939 http.c:648              <= Recv header: X-TFS-ProcessId: 2c6e9e4d-1c44-4db5-bd31-3fe417501e0d
+14:42:59.916939 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:42:59.916939 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+14:42:59.916939 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+14:42:59.916939 http.c:648              <= Recv header: ActivityId: 8bdbb864-2ae9-4b92-9f79-9187bdb703be
+14:42:59.916939 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+14:42:59.916939 http.c:648              <= Recv header: X-TFS-Session: 8bdbb864-2ae9-4b92-9f79-9187bdb703be
+14:42:59.916939 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+14:42:59.916939 http.c:648              <= Recv header: X-VSS-E2EID: 8bdbb864-2ae9-4b92-9f79-9187bdb703be
+14:42:59.916939 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:42:59.916939 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+14:42:59.916939 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+14:42:59.916939 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+14:42:59.916939 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:42:59.916939 http.c:648              <= Recv header: X-TFS-FedAuthRealm: https://tfsprodwus22.app.visualstudio.com/
+14:42:59.916939 http.c:636              <= Recv header, 0000000061 bytes (0x0000003d)
+14:42:59.916939 http.c:648              <= Recv header: X-TFS-FedAuthIssuer: https://ointprotocol.visualstudio.com/
+14:42:59.916939 http.c:636              <= Recv header, 0000000075 bytes (0x0000004b)
+14:42:59.916939 http.c:648              <= Recv header: X-VSS-AuthorizationEndpoint: https://ointprotocol.vssps.visualstudio.com/
+14:42:59.916939 http.c:636              <= Recv header, 0000000060 bytes (0x0000003c)
+14:42:59.916939 http.c:648              <= Recv header: X-VSS-ResourceTenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
+14:42:59.916939 http.c:636              <= Recv header, 0000000710 bytes (0x000002c6)
+14:42:59.916939 http.c:648              <= Recv header: X-TFS-SoapException: %3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csoap%3AEnvelope%20xmlns%3Asoap%3D%22http%3A%2F%2Fwww.w3.org%2F2003%2F05%2Fsoap-envelope%22%3E%3Csoap%3ABody%3E%3Csoap%3AFault%3E%3Csoap%3ACode%3E%3Csoap%3AValue%3Esoap%3AReceiver%3C%2Fsoap%3AValue%3E%3Csoap%3ASubcode%3E%3Csoap%3AValue%3EUnauthorizedRequestException%3C%2Fsoap%3AValue%3E%3C%2Fsoap%3ASubcode%3E%3C%2Fsoap%3ACode%3E%3Csoap%3AReason%3E%3Csoap%3AText%20xml%3Alang%3D%22en%22%3ETF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.%3C%2Fsoap%3AText%3E%3C%2Fsoap%3AReason%3E%3C%2Fsoap%3AFault%3E%3C%2Fsoap%3ABody%3E%3C%2Fsoap%3AEnvelope%3E
+14:42:59.916939 http.c:636              <= Recv header, 0000000148 bytes (0x00000094)
+14:42:59.916939 http.c:648              <= Recv header: X-TFS-ServiceError: TF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.
+14:42:59.916939 http.c:636              <= Recv header, 0000000079 bytes (0x0000004f)
+14:42:59.916939 http.c:648              <= Recv header: X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+14:42:59.916939 http.c:636              <= Recv header, 0000000571 bytes (0x0000023b)
+14:42:59.916939 http.c:648              <= Recv header: X-TFS-FedAuthRedirect: https://spsprodwus21.vssps.visualstudio.com/_signin?realm=ointprotocol.visualstudio.com&reply_to=https%3A%2F%2Fointprotocol.visualstudio.com%2FGendoxData%2F_git%2FGendoxData%2Fgvfs%2Fprefetch%3FlastPackTimestamp%3D1703484905&redirect=1&hid=5fe04b63-037b-40a0-bb74-59bff9bb8bf0&context=eyJodCI6MiwiaGlkIjoiYWM2N2Y0ZjMtN2YzNy00ZmQ0LTlmZDItM2E2YzY1ZDMzZWQ4IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+14:42:59.916939 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+14:42:59.916939 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+14:42:59.916939 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+14:42:59.916939 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+14:42:59.916939 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:42:59.916939 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+14:42:59.916939 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+14:42:59.916939 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+14:42:59.916939 http.c:636              <= Recv header, 0000000102 bytes (0x00000066)
+14:42:59.916939 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: FA8447071F9946FBA433B7CD585E01F4 Ref B: ATAEDGE1506 Ref C: 2023-12-25T06:42:59Z
+14:42:59.916939 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+14:42:59.916939 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 06:42:59 GMT
+14:42:59.916939 http.c:689              == Info: The requested URL returned error: 401
+14:42:59.916939 http.c:689              == Info: Closing connection 0
+14:42:59.916939 http.c:689              == Info: TLSv1.2 (OUT), TLS alert, close notify (256):
+14:42:59.916939 gvfs-helper.c:1188           | d3 | main                     | region_leave |     |  1.767293 |  1.734629 | gvfs-helper  | label:(main)
+14:42:59.916939 run-command.c:721            | d3 | main                     | child_start  |     |  1.767418 |           |              | [ch0] class:cred argv:['git credential-manager-core get']
+14:42:59.974177 common-main.c:49             | d4 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:42:59.974177 common-main.c:50             | d4 | main                     | start        |     |  0.005289 |           |              | 'C:\Program Files\Git\mingw64\libexec\git-core\git.exe' credential-manager-core get
+14:42:59.989795 ..._win32_process_info.c:118 | d4 | main                     | data_json    | r0  |  0.024149 |  0.024149 | process      | windows/ancestry:["sh.exe","git-gvfs-helper.exe","git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:43:00.005428 git.c:817                    | d4 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_/gvfs-helper/_run_dashed_)
+14:43:00.005428 run-command.c:721            | d4 | main                     | child_start  |     |  0.026694 |           |              | [ch0] class:dashed argv:[git-credential-manager-core get]
+14:43:00.829100 run-command.c:977            | d4 | main                     | child_exit   |     |  0.853441 |  0.826747 |              | [ch0] pid:8488 code:0
+14:43:00.829100 wrapper.c:621                | d4 | main                     | data         | r0  |  0.853490 |  0.853490 | fsync        | fsync/writeout-only:0
+14:43:00.829100 wrapper.c:622                | d4 | main                     | data         | r0  |  0.853520 |  0.853520 | fsync        | fsync/hardware-flush:0
+14:43:00.829100 ..._win32_process_info.c:166 | d4 | main                     | data_json    | r0  |  0.853886 |  0.853886 | process      | windows/memory:{"PageFaultCount":4887,"PeakWorkingSetSize":7897088,"PeakPagefileUsage":3194880}
+14:43:00.829100 git.c:842                    | d4 | main                     | exit         |     |  0.853909 |           |              | code:0
+14:43:00.829100 trace2/tr2_tgt_perf.c:215    | d4 | main                     | atexit       |     |  0.853919 |           |              | code:0
+14:43:00.829100 run-command.c:977            | d3 | main                     | child_exit   |     |  2.683303 |  0.915885 |              | [ch0] pid:4936 code:0
+14:43:00.829100 gvfs-helper.c:1151           | d3 | main                     | region_enter |     |  2.684435 |           | gvfs-helper  | label:(main)
+14:43:00.829100 http.c:689              == Info: NTLM-proxy picked AND auth done set, clear picked!
+14:43:00.829100 http.c:689              == Info: Hostname ointprotocol.visualstudio.com was found in DNS cache
+14:43:00.829100 http.c:689              == Info:   Trying 13.107.42.18:443...
+14:43:00.844690 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#1)
+14:43:00.844690 http.c:689              == Info: ALPN, offering http/1.1
+14:43:00.844690 http.c:689              == Info:  CAfile: C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+14:43:00.844690 http.c:689              == Info:  CApath: none
+14:43:00.844690 http.c:689              == Info: SSL re-using session ID
+14:43:00.844690 http.c:689              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+14:43:01.485068 http.c:689              == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+14:43:01.485068 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Certificate (11):
+14:43:01.485068 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+14:43:01.485068 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server finished (14):
+14:43:01.485068 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+14:43:01.485068 http.c:689              == Info: TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+14:43:01.485068 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Finished (20):
+14:43:01.730632 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Finished (20):
+14:43:01.730632 http.c:689              == Info: old SSL session ID is stale, removing
+14:43:01.730632 http.c:689              == Info: SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+14:43:01.730632 http.c:689              == Info: ALPN, server accepted to use http/1.1
+14:43:01.730632 http.c:689              == Info: Server certificate:
+14:43:01.730632 http.c:689              == Info:  subject: C=US; ST=WA; L=Redmond; O=Microsoft Corporation; CN=visualstudio.com
+14:43:01.730632 http.c:689              == Info:  start date: Dec 23 06:01:12 2023 GMT
+14:43:01.730632 http.c:689              == Info:  expire date: Jun 20 06:01:12 2024 GMT
+14:43:01.730632 http.c:689              == Info:  subjectAltName: host "ointprotocol.visualstudio.com" matched cert's "*.visualstudio.com"
+14:43:01.730632 http.c:689              == Info:  issuer: C=US; O=Microsoft Corporation; CN=Microsoft Azure RSA TLS Issuing CA 03
+14:43:01.730632 http.c:689              == Info:  SSL certificate verify ok.
+14:43:01.730632 http.c:689              == Info: Server auth using Basic with user 'v-liuweining@microsoft.com'
+14:43:01.730632 http.c:636              => Send header, 0000000396 bytes (0x0000018c)
+14:43:01.730632 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/gvfs/prefetch?lastPackTimestamp=1703484905 HTTP/1.1
+14:43:01.730632 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+14:43:01.730632 http.c:648              => Send header: Authorization: Basic <redacted>
+14:43:01.730632 http.c:648              => Send header: User-Agent: git/2.36.0.vfs.0.0
+14:43:01.730632 http.c:648              => Send header: X-TFS-FedAuthRedirect: Suppress
+14:43:01.730632 http.c:648              => Send header: Pragma: no-cache
+14:43:01.730632 http.c:648              => Send header: Accept: application/x-gvfs-timestamped-packfiles-indexes
+14:43:01.730632 http.c:648              => Send header:
+14:43:02.303340 http.c:689              == Info: Mark bundle as not supporting multiuse
+14:43:02.303340 http.c:636              <= Recv header, 0000000017 bytes (0x00000011)
+14:43:02.303340 http.c:648              <= Recv header: HTTP/1.1 200 OK
+14:43:02.303340 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+14:43:02.303340 http.c:648              <= Recv header: Cache-Control: private
+14:43:02.303340 http.c:636              <= Recv header, 0000000028 bytes (0x0000001c)
+14:43:02.303340 http.c:648              <= Recv header: Transfer-Encoding: chunked
+14:43:02.303340 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+14:43:02.303340 http.c:648              <= Recv header: Content-Type: text/html
+14:43:02.303340 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+14:43:02.303340 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+14:43:02.303340 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+14:43:02.303340 http.c:648              <= Recv header: X-TFS-ProcessId: a37e24d9-4204-4feb-8514-ae0a909461c3
+14:43:02.303340 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:02.303340 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+14:43:02.303340 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+14:43:02.303340 http.c:648              <= Recv header: ActivityId: 87db0f85-e649-43a0-b1a2-4c40e80b5fc4
+14:43:02.303340 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+14:43:02.303340 http.c:648              <= Recv header: X-TFS-Session: 87db0f85-e649-43a0-b1a2-4c40e80b5fc4
+14:43:02.303340 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+14:43:02.303340 http.c:648              <= Recv header: X-VSS-E2EID: 87db0f85-e649-43a0-b1a2-4c40e80b5fc4
+14:43:02.303340 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:02.303340 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+14:43:02.303340 http.c:636              <= Recv header, 0000000081 bytes (0x00000051)
+14:43:02.303340 http.c:648              <= Recv header: X-VSS-UserData: d3402d7d-ac13-6e1e-9626-4d4b869a2f07:v-liuweining@microsoft.com
+14:43:02.303340 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+14:43:02.303340 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+14:43:02.303340 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+14:43:02.303340 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+14:43:02.303340 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+14:43:02.303340 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+14:43:02.303340 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:43:02.303340 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+14:43:02.303340 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+14:43:02.303340 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+14:43:02.303340 http.c:636              <= Recv header, 0000000102 bytes (0x00000066)
+14:43:02.303340 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: 8B557947BAD54C58AA187661AD8293EB Ref B: ATAEDGE1718 Ref C: 2023-12-25T06:43:01Z
+14:43:02.303340 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+14:43:02.303340 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 06:43:01 GMT
+14:43:02.303340 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+14:43:02.303340 http.c:648              <= Recv header:
+14:43:02.303340 http.c:689              == Info: Connection #1 to host ointprotocol.visualstudio.com left intact
+14:43:02.303340 gvfs-helper.c:1175           | d3 | main                     | data         |     |  4.161328 |  1.476893 | gvfs-helper  | ..(main)/nr_bytes:8
+14:43:02.318976 gvfs-helper.c:1188           | d3 | main                     | region_leave |     |  4.164027 |  1.479592 | gvfs-helper  | label:(main)
+14:43:02.318976 run-command.c:721            | d3 | main                     | child_start  |     |  4.164118 |           |              | [ch1] class:cred argv:['git credential-manager-core store']
+14:43:02.381435 common-main.c:49             | d4 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:43:02.381435 common-main.c:50             | d4 | main                     | start        |     |  0.009093 |           |              | 'C:\Program Files\Git\mingw64\libexec\git-core\git.exe' credential-manager-core store
+14:43:02.397093 ..._win32_process_info.c:118 | d4 | main                     | data_json    | r0  |  0.033187 |  0.033187 | process      | windows/ancestry:["sh.exe","git-gvfs-helper.exe","git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:43:02.397093 git.c:817                    | d4 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_/gvfs-helper/_run_dashed_)
+14:43:02.397093 run-command.c:721            | d4 | main                     | child_start  |     |  0.035020 |           |              | [ch0] class:dashed argv:[git-credential-manager-core store]
+14:43:03.406935 run-command.c:977            | d4 | main                     | child_exit   |     |  1.033227 |  0.998207 |              | [ch0] pid:1288 code:0
+14:43:03.406935 wrapper.c:621                | d4 | main                     | data         | r0  |  1.033283 |  1.033283 | fsync        | fsync/writeout-only:0
+14:43:03.406935 wrapper.c:622                | d4 | main                     | data         | r0  |  1.033295 |  1.033295 | fsync        | fsync/hardware-flush:0
+14:43:03.406935 ..._win32_process_info.c:166 | d4 | main                     | data_json    | r0  |  1.033568 |  1.033568 | process      | windows/memory:{"PageFaultCount":4885,"PeakWorkingSetSize":7888896,"PeakPagefileUsage":3182592}
+14:43:03.406935 git.c:842                    | d4 | main                     | exit         |     |  1.033605 |           |              | code:0
+14:43:03.406935 trace2/tr2_tgt_perf.c:215    | d4 | main                     | atexit       |     |  1.033615 |           |              | code:0
+14:43:03.406935 run-command.c:977            | d3 | main                     | child_exit   |     |  5.259559 |  1.095441 |              | [ch1] pid:4744 code:0
+14:43:03.406935 gvfs-helper-client.c:560     | d1 | main                     | data         | r1  | 61.670507 |  5.228718 | gh-client    | ..prefetch/packfile_count:0
+14:43:03.406935 gvfs-helper-client.c:562     | d1 | main                     | region_leave | r1  | 61.670538 |  5.228749 | gh-client    | label:objects/prefetch
+14:43:03.406935 builtin/fetch.c:1649         | d1 | main                     | region_enter | r1  | 61.671359 |           | fetch        | label:remote_refs
+14:43:03.406935 run-command.c:721            | d1 | main                     | child_start  |     | 61.671410 |           |              | ..[ch1] class:remote-https argv:[git remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData]
+14:43:03.422562 common-main.c:49             | d2 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:43:03.422562 common-main.c:50             | d2 | main                     | start        |     |  0.005507 |           |              | git remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+14:43:03.438203 ..._win32_process_info.c:118 | d2 | main                     | data_json    | r0  |  0.017539 |  0.017539 | process      | windows/ancestry:["git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:43:03.438203 git.c:817                    | d2 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_)
+14:43:03.438203 run-command.c:721            | d2 | main                     | child_start  |     |  0.018287 |           |              | [ch0] class:dashed argv:[git-remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData]
+14:43:03.453812 common-main.c:49             | d3 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:43:03.453812 common-main.c:50             | d3 | main                     | start        |     |  0.006865 |           |              | git-remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+14:43:03.469451 ..._win32_process_info.c:118 | d3 | main                     | data_json    | r0  |  0.019801 |  0.019801 | process      | windows/ancestry:["git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:43:03.469451 repository.c:136             | d3 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:43:03.469451 remote-curl.c:1503           | d3 | main                     | cmd_name     |     |           |           |              | remote-curl (pull/fetch/_run_dashed_/remote-curl)
+14:43:03.469451 http.c:689              == Info: Couldn't find host ointprotocol.visualstudio.com in the (nil) file; using defaults
+14:43:03.485102 http.c:689              == Info:   Trying 13.107.42.18:443...
+14:43:03.485102 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+14:43:03.485102 http.c:689              == Info: ALPN, offering http/1.1
+14:43:03.500715 http.c:689              == Info:  CAfile: C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+14:43:03.500715 http.c:689              == Info:  CApath: none
+14:43:03.500715 http.c:689              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+14:43:04.114730 http.c:689              == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+14:43:04.114730 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Certificate (11):
+14:43:04.114730 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+14:43:04.114730 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server finished (14):
+14:43:04.114730 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+14:43:04.114730 http.c:689              == Info: TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+14:43:04.114730 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Finished (20):
+14:43:04.375885 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Finished (20):
+14:43:04.375885 http.c:689              == Info: SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+14:43:04.375885 http.c:689              == Info: ALPN, server accepted to use http/1.1
+14:43:04.375885 http.c:689              == Info: Server certificate:
+14:43:04.375885 http.c:689              == Info:  subject: C=US; ST=WA; L=Redmond; O=Microsoft Corporation; CN=visualstudio.com
+14:43:04.375885 http.c:689              == Info:  start date: Dec 23 06:01:12 2023 GMT
+14:43:04.375885 http.c:689              == Info:  expire date: Jun 20 06:01:12 2024 GMT
+14:43:04.375885 http.c:689              == Info:  subjectAltName: host "ointprotocol.visualstudio.com" matched cert's "*.visualstudio.com"
+14:43:04.375885 http.c:689              == Info:  issuer: C=US; O=Microsoft Corporation; CN=Microsoft Azure RSA TLS Issuing CA 03
+14:43:04.375885 http.c:689              == Info:  SSL certificate verify ok.
+14:43:04.375885 http.c:636              => Send header, 0000000245 bytes (0x000000f5)
+14:43:04.375885 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/info/refs?service=git-upload-pack HTTP/1.1
+14:43:04.375885 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+14:43:04.375885 http.c:648              => Send header: User-Agent: git/2.36.0.vfs.0.0
+14:43:04.375885 http.c:648              => Send header: Accept: */*
+14:43:04.375885 http.c:648              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+14:43:04.375885 http.c:648              => Send header: Pragma: no-cache
+14:43:04.375885 http.c:648              => Send header: Git-Protocol: version=2
+14:43:04.375885 http.c:648              => Send header:
+14:43:04.910693 http.c:689              == Info: Mark bundle as not supporting multiuse
+14:43:04.910693 http.c:636              <= Recv header, 0000000027 bytes (0x0000001b)
+14:43:04.910693 http.c:648              <= Recv header: HTTP/1.1 401 Unauthorized
+14:43:04.910693 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+14:43:04.910693 http.c:648              <= Recv header: Cache-Control: private
+14:43:04.910693 http.c:636              <= Recv header, 0000000023 bytes (0x00000017)
+14:43:04.910693 http.c:648              <= Recv header: Content-Length: 89612
+14:43:04.910693 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+14:43:04.910693 http.c:648              <= Recv header: Content-Type: text/html
+14:43:04.910693 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+14:43:04.910693 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+14:43:04.910693 http.c:636              <= Recv header, 0000000115 bytes (0x00000073)
+14:43:04.910693 http.c:648              <= Recv header: WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+14:43:04.910693 http.c:636              <= Recv header, 0000000076 bytes (0x0000004c)
+14:43:04.910693 http.c:648              <= Recv header: WWW-Authenticate: Basic realm="https://tfsprodwus22.app.visualstudio.com/"
+14:43:04.910693 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:43:04.910693 http.c:648              <= Recv header: WWW-Authenticate: TFS-Federated
+14:43:04.910693 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+14:43:04.910693 http.c:648              <= Recv header: X-TFS-ProcessId: 2c6e9e4d-1c44-4db5-bd31-3fe417501e0d
+14:43:04.910693 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:04.910693 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+14:43:04.910693 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+14:43:04.910693 http.c:648              <= Recv header: ActivityId: 8bdbbd31-2ae9-4b92-9f79-9187bdb703be
+14:43:04.910693 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+14:43:04.910693 http.c:648              <= Recv header: X-TFS-Session: 8bdbbd31-2ae9-4b92-9f79-9187bdb703be
+14:43:04.910693 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+14:43:04.910693 http.c:648              <= Recv header: X-VSS-E2EID: 8bdbbd31-2ae9-4b92-9f79-9187bdb703be
+14:43:04.910693 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:04.910693 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+14:43:04.910693 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+14:43:04.910693 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+14:43:04.910693 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:04.910693 http.c:648              <= Recv header: X-TFS-FedAuthRealm: https://tfsprodwus22.app.visualstudio.com/
+14:43:04.910693 http.c:636              <= Recv header, 0000000061 bytes (0x0000003d)
+14:43:04.910693 http.c:648              <= Recv header: X-TFS-FedAuthIssuer: https://ointprotocol.visualstudio.com/
+14:43:04.910693 http.c:636              <= Recv header, 0000000075 bytes (0x0000004b)
+14:43:04.910693 http.c:648              <= Recv header: X-VSS-AuthorizationEndpoint: https://ointprotocol.vssps.visualstudio.com/
+14:43:04.910693 http.c:636              <= Recv header, 0000000060 bytes (0x0000003c)
+14:43:04.910693 http.c:648              <= Recv header: X-VSS-ResourceTenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
+14:43:04.910693 http.c:636              <= Recv header, 0000000710 bytes (0x000002c6)
+14:43:04.910693 http.c:648              <= Recv header: X-TFS-SoapException: %3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csoap%3AEnvelope%20xmlns%3Asoap%3D%22http%3A%2F%2Fwww.w3.org%2F2003%2F05%2Fsoap-envelope%22%3E%3Csoap%3ABody%3E%3Csoap%3AFault%3E%3Csoap%3ACode%3E%3Csoap%3AValue%3Esoap%3AReceiver%3C%2Fsoap%3AValue%3E%3Csoap%3ASubcode%3E%3Csoap%3AValue%3EUnauthorizedRequestException%3C%2Fsoap%3AValue%3E%3C%2Fsoap%3ASubcode%3E%3C%2Fsoap%3ACode%3E%3Csoap%3AReason%3E%3Csoap%3AText%20xml%3Alang%3D%22en%22%3ETF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.%3C%2Fsoap%3AText%3E%3C%2Fsoap%3AReason%3E%3C%2Fsoap%3AFault%3E%3C%2Fsoap%3ABody%3E%3C%2Fsoap%3AEnvelope%3E
+14:43:04.910693 http.c:636              <= Recv header, 0000000148 bytes (0x00000094)
+14:43:04.910693 http.c:648              <= Recv header: X-TFS-ServiceError: TF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.
+14:43:04.910693 http.c:636              <= Recv header, 0000000079 bytes (0x0000004f)
+14:43:04.910693 http.c:648              <= Recv header: X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+14:43:04.910693 http.c:636              <= Recv header, 0000000562 bytes (0x00000232)
+14:43:04.910693 http.c:648              <= Recv header: X-TFS-FedAuthRedirect: https://spsprodwus21.vssps.visualstudio.com/_signin?realm=ointprotocol.visualstudio.com&reply_to=https%3A%2F%2Fointprotocol.visualstudio.com%2FGendoxData%2F_git%2FGendoxData%2Finfo%2Frefs%3Fservice%3Dgit-upload-pack&redirect=1&hid=5fe04b63-037b-40a0-bb74-59bff9bb8bf0&context=eyJodCI6MiwiaGlkIjoiYWM2N2Y0ZjMtN2YzNy00ZmQ0LTlmZDItM2E2YzY1ZDMzZWQ4IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+14:43:04.910693 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+14:43:04.910693 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+14:43:04.910693 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+14:43:04.910693 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+14:43:04.910693 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:43:04.910693 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+14:43:04.910693 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+14:43:04.910693 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+14:43:04.910693 http.c:636              <= Recv header, 0000000106 bytes (0x0000006a)
+14:43:04.910693 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: 4D24CF9561834929B300464770DFE0E1 Ref B: ATL331000103029 Ref C: 2023-12-25T06:43:04Z
+14:43:04.910693 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+14:43:04.910693 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 06:43:04 GMT
+14:43:04.910693 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+14:43:04.910693 http.c:648              <= Recv header:
+14:43:05.287307 http.c:689              == Info: Connection #0 to host ointprotocol.visualstudio.com left intact
+14:43:05.287307 run-command.c:721            | d3 | main                     | child_start  |     |  1.834823 |           |              | [ch0] class:cred argv:['git credential-manager-core get']
+14:43:05.365409 common-main.c:49             | d4 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:43:05.365409 common-main.c:50             | d4 | main                     | start        |     |  0.005169 |           |              | 'C:\Program Files\Git\mingw64\libexec\git-core\git.exe' credential-manager-core get
+14:43:05.381018 ..._win32_process_info.c:118 | d4 | main                     | data_json    | r0  |  0.022591 |  0.022591 | process      | windows/ancestry:["sh.exe","git-remote-https.exe","git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:43:05.381018 git.c:817                    | d4 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_/remote-curl/_run_dashed_)
+14:43:05.381018 run-command.c:721            | d4 | main                     | child_start  |     |  0.023661 |           |              | [ch0] class:dashed argv:[git-credential-manager-core get]
+14:43:06.240419 run-command.c:977            | d4 | main                     | child_exit   |     |  0.877696 |  0.854035 |              | [ch0] pid:4968 code:0
+14:43:06.240419 wrapper.c:621                | d4 | main                     | data         | r0  |  0.877777 |  0.877777 | fsync        | fsync/writeout-only:0
+14:43:06.240419 wrapper.c:622                | d4 | main                     | data         | r0  |  0.877790 |  0.877790 | fsync        | fsync/hardware-flush:0
+14:43:06.240419 ..._win32_process_info.c:166 | d4 | main                     | data_json    | r0  |  0.878247 |  0.878247 | process      | windows/memory:{"PageFaultCount":4900,"PeakWorkingSetSize":7950336,"PeakPagefileUsage":3194880}
+14:43:06.240419 git.c:842                    | d4 | main                     | exit         |     |  0.878283 |           |              | code:0
+14:43:06.240419 trace2/tr2_tgt_perf.c:215    | d4 | main                     | atexit       |     |  0.878301 |           |              | code:0
+14:43:06.240419 run-command.c:977            | d3 | main                     | child_exit   |     |  2.789737 |  0.954914 |              | [ch0] pid:6740 code:0
+14:43:06.240419 http.c:689              == Info: Found bundle for host ointprotocol.visualstudio.com: 0x212df21af70 [serially]
+14:43:06.240419 http.c:689              == Info: Re-using existing connection! (#0) with host ointprotocol.visualstudio.com
+14:43:06.240419 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+14:43:06.240419 http.c:636              => Send header, 0000000245 bytes (0x000000f5)
+14:43:06.240419 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/info/refs?service=git-upload-pack HTTP/1.1
+14:43:06.240419 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+14:43:06.240419 http.c:648              => Send header: User-Agent: git/2.36.0.vfs.0.0
+14:43:06.240419 http.c:648              => Send header: Accept: */*
+14:43:06.240419 http.c:648              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+14:43:06.240419 http.c:648              => Send header: Pragma: no-cache
+14:43:06.240419 http.c:648              => Send header: Git-Protocol: version=2
+14:43:06.240419 http.c:648              => Send header:
+14:43:06.579040 http.c:689              == Info: Mark bundle as not supporting multiuse
+14:43:06.579040 http.c:636              <= Recv header, 0000000027 bytes (0x0000001b)
+14:43:06.579040 http.c:648              <= Recv header: HTTP/1.1 401 Unauthorized
+14:43:06.579040 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+14:43:06.579040 http.c:648              <= Recv header: Cache-Control: private
+14:43:06.579040 http.c:636              <= Recv header, 0000000023 bytes (0x00000017)
+14:43:06.579040 http.c:648              <= Recv header: Content-Length: 89612
+14:43:06.579040 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+14:43:06.579040 http.c:648              <= Recv header: Content-Type: text/html
+14:43:06.579040 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+14:43:06.579040 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+14:43:06.579040 http.c:636              <= Recv header, 0000000115 bytes (0x00000073)
+14:43:06.579040 http.c:648              <= Recv header: WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+14:43:06.579040 http.c:636              <= Recv header, 0000000076 bytes (0x0000004c)
+14:43:06.579040 http.c:648              <= Recv header: WWW-Authenticate: Basic realm="https://tfsprodwus22.app.visualstudio.com/"
+14:43:06.579040 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:43:06.579040 http.c:648              <= Recv header: WWW-Authenticate: TFS-Federated
+14:43:06.579040 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+14:43:06.579040 http.c:648              <= Recv header: X-TFS-ProcessId: 2c6e9e4d-1c44-4db5-bd31-3fe417501e0d
+14:43:06.579040 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:06.579040 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+14:43:06.579040 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+14:43:06.579040 http.c:648              <= Recv header: ActivityId: 8bdbbf2d-2ae9-4b92-9f79-9187bdb703be
+14:43:06.579040 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+14:43:06.579040 http.c:648              <= Recv header: X-TFS-Session: 8bdbbf2d-2ae9-4b92-9f79-9187bdb703be
+14:43:06.579040 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+14:43:06.579040 http.c:648              <= Recv header: X-VSS-E2EID: 8bdbbf2d-2ae9-4b92-9f79-9187bdb703be
+14:43:06.579040 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:06.579040 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+14:43:06.579040 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+14:43:06.579040 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+14:43:06.579040 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:06.579040 http.c:648              <= Recv header: X-TFS-FedAuthRealm: https://tfsprodwus22.app.visualstudio.com/
+14:43:06.579040 http.c:636              <= Recv header, 0000000061 bytes (0x0000003d)
+14:43:06.579040 http.c:648              <= Recv header: X-TFS-FedAuthIssuer: https://ointprotocol.visualstudio.com/
+14:43:06.579040 http.c:636              <= Recv header, 0000000075 bytes (0x0000004b)
+14:43:06.579040 http.c:648              <= Recv header: X-VSS-AuthorizationEndpoint: https://ointprotocol.vssps.visualstudio.com/
+14:43:06.579040 http.c:636              <= Recv header, 0000000060 bytes (0x0000003c)
+14:43:06.579040 http.c:648              <= Recv header: X-VSS-ResourceTenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
+14:43:06.579040 http.c:636              <= Recv header, 0000000710 bytes (0x000002c6)
+14:43:06.579040 http.c:648              <= Recv header: X-TFS-SoapException: %3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csoap%3AEnvelope%20xmlns%3Asoap%3D%22http%3A%2F%2Fwww.w3.org%2F2003%2F05%2Fsoap-envelope%22%3E%3Csoap%3ABody%3E%3Csoap%3AFault%3E%3Csoap%3ACode%3E%3Csoap%3AValue%3Esoap%3AReceiver%3C%2Fsoap%3AValue%3E%3Csoap%3ASubcode%3E%3Csoap%3AValue%3EUnauthorizedRequestException%3C%2Fsoap%3AValue%3E%3C%2Fsoap%3ASubcode%3E%3C%2Fsoap%3ACode%3E%3Csoap%3AReason%3E%3Csoap%3AText%20xml%3Alang%3D%22en%22%3ETF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.%3C%2Fsoap%3AText%3E%3C%2Fsoap%3AReason%3E%3C%2Fsoap%3AFault%3E%3C%2Fsoap%3ABody%3E%3C%2Fsoap%3AEnvelope%3E
+14:43:06.579040 http.c:636              <= Recv header, 0000000148 bytes (0x00000094)
+14:43:06.579040 http.c:648              <= Recv header: X-TFS-ServiceError: TF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.
+14:43:06.579040 http.c:636              <= Recv header, 0000000079 bytes (0x0000004f)
+14:43:06.579040 http.c:648              <= Recv header: X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+14:43:06.579040 http.c:636              <= Recv header, 0000000562 bytes (0x00000232)
+14:43:06.579040 http.c:648              <= Recv header: X-TFS-FedAuthRedirect: https://spsprodwus21.vssps.visualstudio.com/_signin?realm=ointprotocol.visualstudio.com&reply_to=https%3A%2F%2Fointprotocol.visualstudio.com%2FGendoxData%2F_git%2FGendoxData%2Finfo%2Frefs%3Fservice%3Dgit-upload-pack&redirect=1&hid=5fe04b63-037b-40a0-bb74-59bff9bb8bf0&context=eyJodCI6MiwiaGlkIjoiYWM2N2Y0ZjMtN2YzNy00ZmQ0LTlmZDItM2E2YzY1ZDMzZWQ4IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+14:43:06.579040 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+14:43:06.579040 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+14:43:06.579040 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+14:43:06.579040 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+14:43:06.579040 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:43:06.579040 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+14:43:06.579040 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+14:43:06.579040 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+14:43:06.579040 http.c:636              <= Recv header, 0000000106 bytes (0x0000006a)
+14:43:06.579040 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: 15B9B793DEB8475799B52A6A7ECD0EA1 Ref B: ATL331000103029 Ref C: 2023-12-25T06:43:06Z
+14:43:06.579040 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+14:43:06.579040 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 06:43:05 GMT
+14:43:06.579040 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+14:43:06.579040 http.c:648              <= Recv header:
+14:43:06.579040 http.c:689              == Info: Ignoring the response-body
+14:43:06.735255 http.c:689              == Info: Connection #0 to host ointprotocol.visualstudio.com left intact
+14:43:06.735255 http.c:689              == Info: Issue another request to this URL: 'https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData/info/refs?service=git-upload-pack'
+14:43:06.735255 http.c:689              == Info: Found bundle for host ointprotocol.visualstudio.com: 0x212df21af70 [serially]
+14:43:06.735255 http.c:689              == Info: Re-using existing connection! (#0) with host ointprotocol.visualstudio.com
+14:43:06.735255 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+14:43:06.735255 http.c:689              == Info: Server auth using Basic with user 'v-liuweining@microsoft.com'
+14:43:06.735255 http.c:636              => Send header, 0000000376 bytes (0x00000178)
+14:43:06.735255 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/info/refs?service=git-upload-pack HTTP/1.1
+14:43:06.735255 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+14:43:06.735255 http.c:648              => Send header: Authorization: Basic <redacted>
+14:43:06.735255 http.c:648              => Send header: User-Agent: git/2.36.0.vfs.0.0
+14:43:06.735255 http.c:648              => Send header: Accept: */*
+14:43:06.735255 http.c:648              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+14:43:06.735255 http.c:648              => Send header: Pragma: no-cache
+14:43:06.735255 http.c:648              => Send header: Git-Protocol: version=2
+14:43:06.735255 http.c:648              => Send header:
+14:43:07.073428 http.c:689              == Info: Mark bundle as not supporting multiuse
+14:43:07.073428 http.c:636              <= Recv header, 0000000017 bytes (0x00000011)
+14:43:07.073428 http.c:648              <= Recv header: HTTP/1.1 200 OK
+14:43:07.073428 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+14:43:07.073428 http.c:648              <= Recv header: Cache-Control: private
+14:43:07.073428 http.c:636              <= Recv header, 0000000022 bytes (0x00000016)
+14:43:07.073428 http.c:648              <= Recv header: Content-Length: 1479
+14:43:07.073428 http.c:636              <= Recv header, 0000000059 bytes (0x0000003b)
+14:43:07.073428 http.c:648              <= Recv header: Content-Type: application/x-git-upload-pack-advertisement
+14:43:07.073428 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+14:43:07.073428 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+14:43:07.073428 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+14:43:07.073428 http.c:648              <= Recv header: X-TFS-ProcessId: 2c6e9e4d-1c44-4db5-bd31-3fe417501e0d
+14:43:07.073428 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:07.073428 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+14:43:07.073428 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+14:43:07.073428 http.c:648              <= Recv header: ActivityId: 8bdbbf87-2ae9-4b92-9f79-9187bdb703be
+14:43:07.073428 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+14:43:07.073428 http.c:648              <= Recv header: X-TFS-Session: 8bdbbf87-2ae9-4b92-9f79-9187bdb703be
+14:43:07.073428 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+14:43:07.073428 http.c:648              <= Recv header: X-VSS-E2EID: 8bdbbf87-2ae9-4b92-9f79-9187bdb703be
+14:43:07.073428 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+14:43:07.073428 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+14:43:07.073428 http.c:636              <= Recv header, 0000000081 bytes (0x00000051)
+14:43:07.073428 http.c:648              <= Recv header: X-VSS-UserData: d3402d7d-ac13-6e1e-9626-4d4b869a2f07:v-liuweining@microsoft.com
+14:43:07.073428 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+14:43:07.073428 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+14:43:07.073428 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+14:43:07.073428 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+14:43:07.073428 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+14:43:07.073428 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+14:43:07.073428 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+14:43:07.073428 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+14:43:07.073428 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+14:43:07.073428 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+14:43:07.073428 http.c:636              <= Recv header, 0000000106 bytes (0x0000006a)
+14:43:07.073428 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: 81AEF999EBF945EBBDE10FACD2947E69 Ref B: ATL331000103029 Ref C: 2023-12-25T06:43:06Z
+14:43:07.073428 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+14:43:07.073428 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 06:43:06 GMT
+14:43:07.073428 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+14:43:07.073428 http.c:648              <= Recv header:
+14:43:07.073428 http.c:689              == Info: Connection #0 to host ointprotocol.visualstudio.com left intact
+14:43:07.073428 run-command.c:721            | d3 | main                     | child_start  |     |  3.617528 |           |              | [ch1] class:cred argv:['git credential-manager-core store']
+14:43:07.121080 common-main.c:49             | d4 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:43:07.121080 common-main.c:50             | d4 | main                     | start        |     |  0.006402 |           |              | 'C:\Program Files\Git\mingw64\libexec\git-core\git.exe' credential-manager-core store
+14:43:07.136719 ..._win32_process_info.c:118 | d4 | main                     | data_json    | r0  |  0.023345 |  0.023345 | process      | windows/ancestry:["sh.exe","git-remote-https.exe","git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:43:07.152349 git.c:817                    | d4 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_/remote-curl/_run_dashed_)
+14:43:07.152349 run-command.c:721            | d4 | main                     | child_start  |     |  0.024391 |           |              | [ch0] class:dashed argv:[git-credential-manager-core store]
+14:43:07.938827 run-command.c:977            | d4 | main                     | child_exit   |     |  0.824659 |  0.800268 |              | [ch0] pid:8552 code:0
+14:43:07.938827 wrapper.c:621                | d4 | main                     | data         | r0  |  0.824728 |  0.824728 | fsync        | fsync/writeout-only:0
+14:43:07.938827 wrapper.c:622                | d4 | main                     | data         | r0  |  0.824740 |  0.824740 | fsync        | fsync/hardware-flush:0
+14:43:07.938827 ..._win32_process_info.c:166 | d4 | main                     | data_json    | r0  |  0.825007 |  0.825007 | process      | windows/memory:{"PageFaultCount":4901,"PeakWorkingSetSize":7938048,"PeakPagefileUsage":3186688}
+14:43:07.938827 git.c:842                    | d4 | main                     | exit         |     |  0.825030 |           |              | code:0
+14:43:07.938827 trace2/tr2_tgt_perf.c:215    | d4 | main                     | atexit       |     |  0.825042 |           |              | code:0
+14:43:07.954448 run-command.c:977            | d3 | main                     | child_exit   |     |  4.498065 |  0.880537 |              | [ch1] pid:5284 code:0
+14:43:07.954448 connect.c:167                | d3 | main                     | data         |     |  4.498126 |  4.498126 | transfer     | negotiated-version:0
+14:43:07.954448 builtin/fetch.c:1652         | d1 | main                     | region_leave | r1  | 66.213662 |  4.542303 | fetch        | label:remote_refs
+14:43:07.954448 builtin/fetch.c:1365         | d1 | main                     | region_enter | r1  | 66.216748 |           | fetch        | label:consume_refs
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25956086
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25955235
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25956311
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25954723
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 26103786
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 27228452
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25157024
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25070926
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25158119
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25153557
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25872271
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25399885
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25157463
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 27520961
+14:43:07.954448 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 25158287
+14:43:07.954448 usage.c:86                   | d1 | main                     | error        |     |           |           |              | ..fetch normally indicates which branches had a forced update,
+but that check has been disabled; to re-enable, use '--show-forced-updates'
+flag or run 'git config fetch.showForcedUpdates true'
+warning: fetch normally indicates which branches had a forced update,
+but that check has been disabled; to re-enable, use '--show-forced-updates'
+flag or run 'git config fetch.showForcedUpdates true'
+14:43:07.954448 builtin/fetch.c:1369         | d1 | main                     | region_leave | r1  | 66.217975 |  0.001227 | fetch        | label:consume_refs
+14:43:07.954448 wrapper.c:621                | d3 | main                     | data         | r1  |  4.504235 |  4.504235 | fsync        | fsync/writeout-only:0
+14:43:07.954448 wrapper.c:622                | d3 | main                     | data         | r1  |  4.504263 |  4.504263 | fsync        | fsync/hardware-flush:0
+14:43:07.954448 ..._win32_process_info.c:166 | d3 | main                     | data_json    | r1  |  4.504542 |  4.504542 | process      | windows/memory:{"PageFaultCount":5504,"PeakWorkingSetSize":12570624,"PeakPagefileUsage":4710400}
+14:43:07.954448 common-main.c:63             | d3 | main                     | exit         |     |  4.504565 |           |              | code:0
+14:43:07.954448 trace2/tr2_tgt_perf.c:215    | d3 | main                     | atexit       |     |  4.504811 |           |              | code:0
+14:43:07.954448 run-command.c:977            | d2 | main                     | child_exit   |     |  4.541357 |  4.523070 |              | [ch0] pid:1612 code:0
+14:43:07.954448 wrapper.c:621                | d2 | main                     | data         | r0  |  4.541430 |  4.541430 | fsync        | fsync/writeout-only:0
+14:43:07.954448 wrapper.c:622                | d2 | main                     | data         | r0  |  4.541445 |  4.541445 | fsync        | fsync/hardware-flush:0
+14:43:07.954448 ..._win32_process_info.c:166 | d2 | main                     | data_json    | r0  |  4.541773 |  4.541773 | process      | windows/memory:{"PageFaultCount":3985,"PeakWorkingSetSize":7933952,"PeakPagefileUsage":3194880}
+14:43:07.954448 git.c:842                    | d2 | main                     | exit         |     |  4.541800 |           |              | code:0
+14:43:07.954448 trace2/tr2_tgt_perf.c:215    | d2 | main                     | atexit       |     |  4.541812 |           |              | code:0
+14:43:07.970059 run-command.c:977            | d1 | main                     | child_exit   |     | 66.227314 |  4.555904 |              | [ch1] pid:5232 code:0
+14:44:58.297745 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+14:44:58.297745 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607933
+14:44:58.297745 run-command.c:1790           | d1 | main                     | region_enter |     | 176.564919 |           | submodule    | label:parallel/fetch max:1
+14:44:58.313409 run-command.c:1796           | d1 | main                     | region_leave |     | 176.582108 |  0.017189 | submodule    | label:parallel/fetch
+14:44:58.313409 wrapper.c:621                | d1 | main                     | data         | r1  | 176.582203 | 176.582203 | fsync        | fsync/writeout-only:0
+14:44:58.313409 wrapper.c:622                | d1 | main                     | data         | r1  | 176.582216 | 176.582216 | fsync        | fsync/hardware-flush:0
+14:44:58.313409 ..._win32_process_info.c:166 | d1 | main                     | data_json    | r1  | 176.582582 | 176.582582 | process      | windows/memory:{"PageFaultCount":87788,"PeakWorkingSetSize":349728768,"PeakPagefileUsage":265961472}
+14:44:58.313409 git.c:794                    | d1 | main                     | exit         |     | 176.582604 |           |              | code:0
+14:44:58.328992 wrapper.c:621                | d3 | main                     | data         | r1  | 120.173562 | 120.173562 | fsync        | fsync/writeout-only:0
+14:44:58.328992 wrapper.c:622                | d3 | main                     | data         | r1  | 120.173604 | 120.173604 | fsync        | fsync/hardware-flush:0
+14:44:58.328992 ..._win32_process_info.c:166 | d3 | main                     | data_json    | r1  | 120.173873 | 120.173873 | process      | windows/memory:{"PageFaultCount":5692,"PeakWorkingSetSize":12787712,"PeakPagefileUsage":4849664}
+14:44:58.328992 common-main.c:63             | d3 | main                     | exit         |     | 120.173898 |           |              | code:0
+14:44:58.328992 trace2/tr2_tgt_perf.c:215    | d3 | main                     | atexit       |     | 120.174172 |           |              | code:0
+14:44:58.328992 run-command.c:977            | d2 | main                     | child_exit   |     | 120.221111 | 120.193177 |              | [ch0] pid:728 code:0
+14:44:58.328992 wrapper.c:621                | d2 | main                     | data         | r0  | 120.221174 | 120.221174 | fsync        | fsync/writeout-only:0
+14:44:58.328992 wrapper.c:622                | d2 | main                     | data         | r0  | 120.221186 | 120.221186 | fsync        | fsync/hardware-flush:0
+14:44:58.328992 ..._win32_process_info.c:166 | d2 | main                     | data_json    | r0  | 120.221474 | 120.221474 | process      | windows/memory:{"PageFaultCount":4005,"PeakWorkingSetSize":7872512,"PeakPagefileUsage":3182592}
+14:44:58.328992 git.c:842                    | d2 | main                     | exit         |     | 120.221496 |           |              | code:0
+14:44:58.328992 trace2/tr2_tgt_perf.c:215    | d2 | main                     | atexit       |     | 120.221508 |           |              | code:0
+14:44:58.328992 run-command.c:977            | d1 | main                     | child_exit   |     | 176.591982 | 120.241468 |              | [ch0] pid:8636 code:0
+14:44:58.328992 trace2/tr2_tgt_perf.c:215    | d1 | main                     | atexit       |     | 176.592044 |           |              | code:0
+14:44:58.360247 run-command.c:977            | d0 | main                     | child_exit   |     | 230.075862 | 176.627106 |              | [ch0] pid:1680 code:0
+14:44:58.360247 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+14:44:58.360247 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607617
+14:44:58.360247 run-command.c:721            | d0 | main                     | child_start  |     | 230.079620 |           |              | [ch1] class:? argv:[git merge FETCH_HEAD]
+14:44:58.375845 common-main.c:49             | d1 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:44:58.375845 common-main.c:50             | d1 | main                     | start        |     |  0.005641 |           |              | git merge FETCH_HEAD
+14:44:58.391528 ..._win32_process_info.c:118 | d1 | main                     | data_json    | r0  |  0.016871 |  0.016871 | process      | windows/ancestry:["git.exe","git.exe","cmd.exe","explorer.exe"]
+14:44:58.391528 repository.c:136             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:44:58.391528 git.c:532                    | d1 | main                     | cmd_name     |     |           |           |              | merge (pull/merge)
+14:44:58.391528 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+14:44:58.391528 read-cache.c:2468            | d1 | main                     | region_enter | r1  |  0.021822 |           | index        | label:do_read_index .git/index
+14:44:58.391528 read-cache.c:2128            | d1 | th01:load_index_extensio | thread_start |     |  0.022218 |           |              | 
+14:44:58.391528 read-cache.c:1853            | d1 | th01:load_index_extensio | region_enter |     |  0.022261 |           | index        | label:read/extension/cache_tree
+14:44:58.391528 cache-tree.c:688             | d1 | th01:load_index_extensio | region_enter | r1  |  0.022291 |           | cache_tree   | ..label:read
+14:44:58.391528 read-cache.c:2211            | d1 | th02:load_cache_entries  | thread_start |     |  0.022400 |           |              | 
+14:44:58.391528 read-cache.c:2211            | d1 | th03:load_cache_entries  | thread_start |     |  0.022538 |           |              | 
+14:44:58.391528 read-cache.c:2211            | d1 | th04:load_cache_entries  | thread_start |     |  0.022704 |           |              | 
+14:44:58.391528 read-cache.c:2211            | d1 | th05:load_cache_entries  | thread_start |     |  0.022902 |           |              | 
+14:44:58.391528 read-cache.c:2211            | d1 | th06:load_cache_entries  | thread_start |     |  0.022958 |           |              | 
+14:44:58.391528 cache-tree.c:690             | d1 | th01:load_index_extensio | region_leave | r1  |  0.029977 |  0.007686 | cache_tree   | ..label:read
+14:44:58.391528 read-cache.c:1855            | d1 | th01:load_index_extensio | data         |     |  0.030052 |  0.007791 | index        | ..read/extension/cache_tree/bytes:767846
+14:44:58.391528 read-cache.c:1856            | d1 | th01:load_index_extensio | region_leave |     |  0.030065 |  0.007804 | index        | label:read/extension/cache_tree
+14:44:58.391528 fsmonitor.c:94               | d1 | th01:load_index_extensio | data         |     |  0.030084 |  0.007866 | index        | extension/fsmn/read/token:builtin:0.9148.20231225T061501.313149Z:4
+14:44:58.391528 read-cache.c:2130            | d1 | th01:load_index_extensio | thread_exit  |     |  0.030173 |  0.007955 |              | 
+14:44:58.438395 read-cache.c:2220            | d1 | th04:load_cache_entries  | thread_exit  |     |  0.064921 |  0.042217 |              | 
+14:44:58.438395 read-cache.c:2220            | d1 | th06:load_cache_entries  | thread_exit  |     |  0.065442 |  0.042484 |              | 
+14:44:58.438395 read-cache.c:2220            | d1 | th05:load_cache_entries  | thread_exit  |     |  0.066688 |  0.043786 |              | 
+14:44:58.438395 read-cache.c:2220            | d1 | th03:load_cache_entries  | thread_exit  |     |  0.067180 |  0.044642 |              | 
+14:44:58.438395 read-cache.c:2220            | d1 | th02:load_cache_entries  | thread_exit  |     |  0.069502 |  0.047102 |              | 
+14:44:58.438395 read-cache.c:2414            | d1 | main                     | data         | r1  |  0.076945 |  0.055123 | index        | ..read/version:4
+14:44:58.438395 read-cache.c:2416            | d1 | main                     | data         | r1  |  0.076982 |  0.055160 | index        | ..read/cache_nr:1074121
+14:44:58.438395 read-cache.c:2473            | d1 | main                     | region_leave | r1  |  0.077000 |  0.055178 | index        | label:do_read_index .git/index
+14:44:58.469682 fsmonitor-ipc.c:80           | d1 | main                     | region_enter |     |  0.108618 |           | fsm_client   | label:query
+14:44:58.469682 fsmonitor-ipc.c:81           | d1 | main                     | data         |     |  0.108697 |  0.000079 | fsm_client   | ..query/command:builtin:0.9148.20231225T061501.313149Z:4
+14:44:58.469682 ...imple-ipc/ipc-win32.c:202 | d1 | main                     | region_enter |     |  0.108717 |           | ipc-client   | ..label:try-connect
+14:44:58.469682 ...imple-ipc/ipc-win32.c:203 | d1 | main                     | data         |     |  0.108729 |  0.000012 | ipc-client   | ....try-connect/path:.git/fsmonitor--daemon.ipc
+14:44:58.469682 ...imple-ipc/ipc-win32.c:211 | d1 | main                     | data         |     |  0.109083 |  0.000366 | ipc-client   | ....try-connect/state:0
+14:44:58.469682 ...imple-ipc/ipc-win32.c:213 | d1 | main                     | region_leave |     |  0.109111 |  0.000394 | ipc-client   | ..label:try-connect
+14:44:58.469682 ...imple-ipc/ipc-win32.c:243 | d1 | main                     | region_enter |     |  0.109125 |           | ipc-client   | ..label:send-command
+14:44:58.485224 ...imple-ipc/ipc-win32.c:262 | d1 | main                     | region_leave |     |  0.111081 |  0.001956 | ipc-client   | ..label:send-command
+14:44:58.485224 fsmonitor-ipc.c:93           | d1 | main                     | data         |     |  0.111128 |  0.002510 | fsm_client   | ..query/response-length:37988
+14:44:58.485224 fsmonitor-ipc.c:131          | d1 | main                     | region_leave |     |  0.111144 |  0.002526 | fsm_client   | label:query
+14:44:58.485224 fsmonitor.c:439              | d1 | main                     | region_enter | r1  |  0.111158 |           | fsmonitor    | label:apply_results
+14:44:58.516474 fsmonitor.c:469              | d1 | main                     | data         | r1  |  0.152122 |  0.040964 | fsmonitor    | ..apply_count:826
+14:44:58.516474 fsmonitor.c:500              | d1 | main                     | region_leave | r1  |  0.152201 |  0.041043 | fsmonitor    | label:apply_results
+14:45:55.266439 packfile.c:1643         C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2/pack/prefetch-1703484905-0f07645d3640820ac61178fc12d3d7f7b5eb1780.pack 28607774
+Already up to date.
+14:45:55.282051 wrapper.c:621                | d1 | main                     | data         | r1  | 56.906378 | 56.906378 | fsync        | fsync/writeout-only:0
+14:45:55.282051 wrapper.c:622                | d1 | main                     | data         | r1  | 56.906399 | 56.906399 | fsync        | fsync/hardware-flush:0
+14:45:55.282051 ..._win32_process_info.c:166 | d1 | main                     | data_json    | r1  | 56.906704 | 56.906704 | process      | windows/memory:{"PageFaultCount":87644,"PeakWorkingSetSize":350531584,"PeakPagefileUsage":266825728}
+14:45:55.282051 git.c:794                    | d1 | main                     | exit         |     | 56.906730 |           |              | code:0
+14:45:55.282051 trace2/tr2_tgt_perf.c:215    | d1 | main                     | atexit       |     | 56.906741 |           |              | code:0
+14:45:55.297729 run-command.c:977            | d0 | main                     | child_exit   |     | 287.023065 | 56.943445 |              | [ch1] pid:2588 code:0
+14:45:55.297729 wrapper.c:621                | d0 | main                     | data         | r1  | 287.023361 | 287.023361 | fsync        | fsync/writeout-only:0
+14:45:55.297729 wrapper.c:622                | d0 | main                     | data         | r1  | 287.023385 | 287.023385 | fsync        | fsync/hardware-flush:0
+14:45:55.297729 ..._win32_process_info.c:166 | d0 | main                     | data_json    | r1  | 287.023826 | 287.023826 | process      | windows/memory:{"PageFaultCount":87391,"PeakWorkingSetSize":349757440,"PeakPagefileUsage":265920512}
+14:45:55.297729 git.c:794                    | d0 | main                     | exit         |     | 287.023857 |           |              | code:0
+14:45:55.297729 trace2/tr2_tgt_perf.c:215    | d0 | main                     | atexit       |     | 287.023873 |           |              | code:0

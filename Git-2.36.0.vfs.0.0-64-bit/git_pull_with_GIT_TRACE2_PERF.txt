@@ -1,0 +1,263 @@
+14:27:41.735089 common-main.c:49             | d0 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:27:41.735089 common-main.c:50             | d0 | main                     | start        |     |  0.008391 |           |              | git.exe pull
+14:27:41.750742 ..._win32_process_info.c:118 | d0 | main                     | data_json    | r0  |  0.016253 |  0.016253 | process      | windows/ancestry:["git.exe","cmd.exe","explorer.exe"]
+14:27:41.750742 repository.c:136             | d0 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:27:41.750742 git.c:532                    | d0 | main                     | cmd_name     |     |           |           |              | pull (pull)
+14:27:41.750742 read-cache.c:2468            | d0 | main                     | region_enter | r1  |  0.024392 |           | index        | label:do_read_index .git/index
+14:27:41.750742 read-cache.c:2128            | d0 | th01:load_index_extensio | thread_start |     |  0.024919 |           |              | 
+14:27:41.750742 read-cache.c:1853            | d0 | th01:load_index_extensio | region_enter |     |  0.024965 |           | index        | label:read/extension/cache_tree
+14:27:41.750742 cache-tree.c:688             | d0 | th01:load_index_extensio | region_enter | r1  |  0.024978 |           | cache_tree   | ..label:read
+14:27:41.750742 read-cache.c:2211            | d0 | th02:load_cache_entries  | thread_start |     |  0.025016 |           |              | 
+14:27:41.750742 read-cache.c:2211            | d0 | th03:load_cache_entries  | thread_start |     |  0.025139 |           |              | 
+14:27:41.750742 read-cache.c:2211            | d0 | th04:load_cache_entries  | thread_start |     |  0.025256 |           |              | 
+14:27:41.750742 read-cache.c:2211            | d0 | th05:load_cache_entries  | thread_start |     |  0.025383 |           |              | 
+14:27:41.750742 read-cache.c:2211            | d0 | th06:load_cache_entries  | thread_start |     |  0.025461 |           |              | 
+14:27:41.766368 cache-tree.c:690             | d0 | th01:load_index_extensio | region_leave | r1  |  0.035000 |  0.010022 | cache_tree   | ..label:read
+14:27:41.766368 read-cache.c:1855            | d0 | th01:load_index_extensio | data         |     |  0.035090 |  0.010125 | index        | ..read/extension/cache_tree/bytes:767846
+14:27:41.766368 read-cache.c:1856            | d0 | th01:load_index_extensio | region_leave |     |  0.035110 |  0.010145 | index        | label:read/extension/cache_tree
+14:27:41.766368 fsmonitor.c:94               | d0 | th01:load_index_extensio | data         |     |  0.035140 |  0.010221 | index        | extension/fsmn/read/token:builtin:0.9148.20231225T061501.313149Z:4
+14:27:41.766368 read-cache.c:2130            | d0 | th01:load_index_extensio | thread_exit  |     |  0.035258 |  0.010339 |              | 
+14:27:41.797635 read-cache.c:2220            | d0 | th06:load_cache_entries  | thread_exit  |     |  0.057764 |  0.032303 |              | 
+14:27:41.797635 read-cache.c:2220            | d0 | th04:load_cache_entries  | thread_exit  |     |  0.061495 |  0.036239 |              | 
+14:27:41.797635 read-cache.c:2220            | d0 | th02:load_cache_entries  | thread_exit  |     |  0.065351 |  0.040335 |              | 
+14:27:41.797635 read-cache.c:2220            | d0 | th05:load_cache_entries  | thread_exit  |     |  0.066603 |  0.041220 |              | 
+14:27:41.797635 read-cache.c:2220            | d0 | th03:load_cache_entries  | thread_exit  |     |  0.066865 |  0.041726 |              | 
+14:27:41.813278 read-cache.c:2414            | d0 | main                     | data         | r1  |  0.073463 |  0.049071 | index        | ..read/version:4
+14:27:41.813278 read-cache.c:2416            | d0 | main                     | data         | r1  |  0.073492 |  0.049100 | index        | ..read/cache_nr:1074121
+14:27:41.813278 read-cache.c:2473            | d0 | main                     | region_leave | r1  |  0.073508 |  0.049116 | index        | label:do_read_index .git/index
+14:27:41.828814 fsmonitor-ipc.c:80           | d0 | main                     | region_enter |     |  0.103293 |           | fsm_client   | label:query
+14:27:41.828814 fsmonitor-ipc.c:81           | d0 | main                     | data         |     |  0.103362 |  0.000069 | fsm_client   | ..query/command:builtin:0.9148.20231225T061501.313149Z:4
+14:27:41.828814 ...imple-ipc/ipc-win32.c:202 | d0 | main                     | region_enter |     |  0.103389 |           | ipc-client   | ..label:try-connect
+14:27:41.828814 ...imple-ipc/ipc-win32.c:203 | d0 | main                     | data         |     |  0.103400 |  0.000011 | ipc-client   | ....try-connect/path:.git/fsmonitor--daemon.ipc
+14:27:41.828814 ...imple-ipc/ipc-win32.c:211 | d0 | main                     | data         |     |  0.103745 |  0.000356 | ipc-client   | ....try-connect/state:0
+14:27:41.828814 ...imple-ipc/ipc-win32.c:213 | d0 | main                     | region_leave |     |  0.103767 |  0.000378 | ipc-client   | ..label:try-connect
+14:27:41.828814 ...imple-ipc/ipc-win32.c:243 | d0 | main                     | region_enter |     |  0.103780 |           | ipc-client   | ..label:send-command
+14:27:41.844459 ...imple-ipc/ipc-win32.c:262 | d0 | main                     | region_leave |     |  0.105313 |  0.001533 | ipc-client   | ..label:send-command
+14:27:41.844459 fsmonitor-ipc.c:93           | d0 | main                     | data         |     |  0.105371 |  0.002078 | fsm_client   | ..query/response-length:37202
+14:27:41.844459 fsmonitor-ipc.c:131          | d0 | main                     | region_leave |     |  0.105393 |  0.002100 | fsm_client   | label:query
+14:27:41.844459 fsmonitor.c:439              | d0 | main                     | region_enter | r1  |  0.105409 |           | fsmonitor    | label:apply_results
+14:27:41.875755 fsmonitor.c:469              | d0 | main                     | data         | r1  |  0.137584 |  0.032175 | fsmonitor    | ..apply_count:807
+14:27:41.875755 fsmonitor.c:500              | d0 | main                     | region_leave | r1  |  0.137636 |  0.032227 | fsmonitor    | label:apply_results
+14:28:32.938256 run-command.c:721            | d0 | main                     | child_start  |     | 51.211225 |           |              | [ch0] class:? argv:[git fetch --update-head-ok]
+14:28:32.969437 common-main.c:49             | d1 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:28:32.969437 common-main.c:50             | d1 | main                     | start        |     |  0.007647 |           |              | git fetch --update-head-ok
+14:28:32.985104 ..._win32_process_info.c:118 | d1 | main                     | data_json    | r0  |  0.020352 |  0.020352 | process      | windows/ancestry:["git.exe","git.exe","cmd.exe","explorer.exe"]
+14:28:32.985104 repository.c:136             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:28:32.985104 git.c:532                    | d1 | main                     | cmd_name     |     |           |           |              | fetch (pull/fetch)
+14:28:32.985104 read-cache.c:2468            | d1 | main                     | region_enter | r1  |  0.023405 |           | index        | label:do_read_index .git/index
+14:28:32.985104 read-cache.c:2128            | d1 | th01:load_index_extensio | thread_start |     |  0.023892 |           |              | 
+14:28:32.985104 read-cache.c:1853            | d1 | th01:load_index_extensio | region_enter |     |  0.023938 |           | index        | label:read/extension/cache_tree
+14:28:32.985104 cache-tree.c:688             | d1 | th01:load_index_extensio | region_enter | r1  |  0.023974 |           | cache_tree   | ..label:read
+14:28:32.985104 read-cache.c:2211            | d1 | th02:load_cache_entries  | thread_start |     |  0.024015 |           |              | 
+14:28:32.985104 read-cache.c:2211            | d1 | th03:load_cache_entries  | thread_start |     |  0.024121 |           |              | 
+14:28:32.985104 read-cache.c:2211            | d1 | th04:load_cache_entries  | thread_start |     |  0.024253 |           |              | 
+14:28:32.985104 read-cache.c:2211            | d1 | th05:load_cache_entries  | thread_start |     |  0.024403 |           |              | 
+14:28:32.985104 read-cache.c:2211            | d1 | th06:load_cache_entries  | thread_start |     |  0.024467 |           |              | 
+14:28:33.000693 cache-tree.c:690             | d1 | th01:load_index_extensio | region_leave | r1  |  0.034271 |  0.010297 | cache_tree   | ..label:read
+14:28:33.000693 read-cache.c:1855            | d1 | th01:load_index_extensio | data         |     |  0.034363 |  0.010425 | index        | ..read/extension/cache_tree/bytes:767846
+14:28:33.000693 read-cache.c:1856            | d1 | th01:load_index_extensio | region_leave |     |  0.034376 |  0.010438 | index        | label:read/extension/cache_tree
+14:28:33.000693 fsmonitor.c:94               | d1 | th01:load_index_extensio | data         |     |  0.034399 |  0.010507 | index        | extension/fsmn/read/token:builtin:0.9148.20231225T061501.313149Z:4
+14:28:33.000693 read-cache.c:2130            | d1 | th01:load_index_extensio | thread_exit  |     |  0.034491 |  0.010599 |              | 
+14:28:33.031987 read-cache.c:2220            | d1 | th05:load_cache_entries  | thread_exit  |     |  0.075394 |  0.050991 |              | 
+14:28:33.031987 read-cache.c:2220            | d1 | th03:load_cache_entries  | thread_exit  |     |  0.077872 |  0.053751 |              | 
+14:28:33.031987 read-cache.c:2220            | d1 | th06:load_cache_entries  | thread_exit  |     |  0.078729 |  0.054262 |              | 
+14:28:33.031987 read-cache.c:2220            | d1 | th04:load_cache_entries  | thread_exit  |     |  0.079959 |  0.055706 |              | 
+14:28:33.047624 read-cache.c:2220            | d1 | th02:load_cache_entries  | thread_exit  |     |  0.080832 |  0.056817 |              | 
+14:28:33.047624 read-cache.c:2414            | d1 | main                     | data         | r1  |  0.088881 |  0.065476 | index        | ..read/version:4
+14:28:33.047624 read-cache.c:2416            | d1 | main                     | data         | r1  |  0.088938 |  0.065533 | index        | ..read/cache_nr:1074121
+14:28:33.047624 read-cache.c:2473            | d1 | main                     | region_leave | r1  |  0.088958 |  0.065553 | index        | label:do_read_index .git/index
+14:28:33.078894 fsmonitor-ipc.c:80           | d1 | main                     | region_enter |     |  0.121455 |           | fsm_client   | label:query
+14:28:33.078894 fsmonitor-ipc.c:81           | d1 | main                     | data         |     |  0.121526 |  0.000071 | fsm_client   | ..query/command:builtin:0.9148.20231225T061501.313149Z:4
+14:28:33.078894 ...imple-ipc/ipc-win32.c:202 | d1 | main                     | region_enter |     |  0.121543 |           | ipc-client   | ..label:try-connect
+14:28:33.078894 ...imple-ipc/ipc-win32.c:203 | d1 | main                     | data         |     |  0.121552 |  0.000009 | ipc-client   | ....try-connect/path:.git/fsmonitor--daemon.ipc
+14:28:33.078894 ...imple-ipc/ipc-win32.c:211 | d1 | main                     | data         |     |  0.121915 |  0.000372 | ipc-client   | ....try-connect/state:0
+14:28:33.078894 ...imple-ipc/ipc-win32.c:213 | d1 | main                     | region_leave |     |  0.121938 |  0.000395 | ipc-client   | ..label:try-connect
+14:28:33.078894 ...imple-ipc/ipc-win32.c:243 | d1 | main                     | region_enter |     |  0.121951 |           | ipc-client   | ..label:send-command
+14:28:33.078894 ...imple-ipc/ipc-win32.c:262 | d1 | main                     | region_leave |     |  0.123286 |  0.001335 | ipc-client   | ..label:send-command
+14:28:33.078894 fsmonitor-ipc.c:93           | d1 | main                     | data         |     |  0.123318 |  0.001863 | fsm_client   | ..query/response-length:37202
+14:28:33.078894 fsmonitor-ipc.c:131          | d1 | main                     | region_leave |     |  0.123339 |  0.001884 | fsm_client   | label:query
+14:28:33.078894 fsmonitor.c:439              | d1 | main                     | region_enter | r1  |  0.123352 |           | fsmonitor    | label:apply_results
+14:28:33.126536 fsmonitor.c:469              | d1 | main                     | data         | r1  |  0.164550 |  0.041198 | fsmonitor    | ..apply_count:807
+14:28:33.126536 fsmonitor.c:500              | d1 | main                     | region_leave | r1  |  0.164613 |  0.041261 | fsmonitor    | label:apply_results
+14:29:27.469491 run-command.c:721            | d1 | main                     | child_start  |     | 54.504852 |           |              | [ch0] class:subprocess argv:[git gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server]
+14:29:27.485085 common-main.c:49             | d2 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:29:27.485085 common-main.c:50             | d2 | main                     | start        |     |  0.006275 |           |              | git gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+14:29:27.500732 ..._win32_process_info.c:118 | d2 | main                     | data_json    | r0  |  0.019815 |  0.019815 | process      | windows/ancestry:["git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:29:27.500732 git.c:817                    | d2 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_)
+14:29:27.500732 run-command.c:721            | d2 | main                     | child_start  |     |  0.021804 |           |              | [ch0] class:dashed argv:[git-gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server]
+14:29:27.529286 common-main.c:49             | d3 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:29:27.529286 common-main.c:50             | d3 | main                     | start        |     |  0.007651 |           |              | git-gvfs-helper --fallback --cache-server=trust --shared-cache=C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/.scalarCache/id_31252ac1-73d5-454d-86ca-992b99519ae2 server
+14:29:27.544922 ..._win32_process_info.c:118 | d3 | main                     | data_json    | r0  |  0.022821 |  0.022821 | process      | windows/ancestry:["git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:29:27.544922 gvfs-helper.c:4182           | d3 | main                     | cmd_name     |     |           |           |              | gvfs-helper (pull/fetch/_run_dashed_/gvfs-helper)
+14:29:27.547951 repository.c:136             | d3 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:29:27.547951 gvfs-helper.c:4077           | d3 | main                     | cmd_mode     |     |           |           |              | server
+14:29:27.547951 gvfs-helper.c:1335           | d3 | main                     | data         |     |  0.027345 |  0.027345 | gvfs-helper  | remote/url:https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+14:29:27.547951 gvfs-helper.c:1371           | d3 | main                     | data         |     |  0.030482 |  0.030482 | gvfs-helper  | cache/url:unset
+14:29:27.547951 gvfs-helper-client.c:539     | d1 | main                     | region_enter | r1  | 54.587459 |           | gh-client    | label:objects/prefetch
+14:29:27.547951 gvfs-helper-client.c:540     | d1 | main                     | data         | r1  | 54.587489 |  0.000030 | gh-client    | ..prefetch/since:0
+14:29:27.547951 gvfs-helper.c:1151           | d3 | main                     | region_enter |     |  0.031930 |           | gvfs-helper  | label:(main)
+14:29:29.454042 gvfs-helper.c:1188           | d3 | main                     | region_leave |     |  1.937247 |  1.905317 | gvfs-helper  | label:(main)
+14:29:29.454042 run-command.c:721            | d3 | main                     | child_start  |     |  1.937429 |           |              | [ch0] class:cred argv:['git credential-manager-core get']
+14:29:29.516374 common-main.c:49             | d4 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:29:29.516374 common-main.c:50             | d4 | main                     | start        |     |  0.007730 |           |              | 'C:\Program Files\Git\mingw64\libexec\git-core\git.exe' credential-manager-core get
+14:29:29.532063 ..._win32_process_info.c:118 | d4 | main                     | data_json    | r0  |  0.024115 |  0.024115 | process      | windows/ancestry:["sh.exe","git-gvfs-helper.exe","git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:29:29.532063 git.c:817                    | d4 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_/gvfs-helper/_run_dashed_)
+14:29:29.532063 run-command.c:721            | d4 | main                     | child_start  |     |  0.025600 |           |              | [ch0] class:dashed argv:[git-credential-manager-core get]
+14:29:30.360078 run-command.c:977            | d4 | main                     | child_exit   |     |  0.857122 |  0.831522 |              | [ch0] pid:6116 code:0
+14:29:30.360078 wrapper.c:621                | d4 | main                     | data         | r0  |  0.857171 |  0.857171 | fsync        | fsync/writeout-only:0
+14:29:30.360078 wrapper.c:622                | d4 | main                     | data         | r0  |  0.857184 |  0.857184 | fsync        | fsync/hardware-flush:0
+14:29:30.360078 ..._win32_process_info.c:166 | d4 | main                     | data_json    | r0  |  0.857460 |  0.857460 | process      | windows/memory:{"PageFaultCount":4786,"PeakWorkingSetSize":7856128,"PeakPagefileUsage":3178496}
+14:29:30.360078 git.c:842                    | d4 | main                     | exit         |     |  0.857483 |           |              | code:0
+14:29:30.360078 trace2/tr2_tgt_perf.c:215    | d4 | main                     | atexit       |     |  0.857494 |           |              | code:0
+14:29:30.375731 run-command.c:977            | d3 | main                     | child_exit   |     |  2.856594 |  0.919165 |              | [ch0] pid:8784 code:0
+14:29:30.375731 gvfs-helper.c:1151           | d3 | main                     | region_enter |     |  2.857516 |           | gvfs-helper  | label:(main)
+14:29:31.751071 gvfs-helper.c:1175           | d3 | main                     | data         |     |  4.242459 |  1.384943 | gvfs-helper  | ..(main)/nr_bytes:8
+14:29:31.766620 gvfs-helper.c:1188           | d3 | main                     | region_leave |     |  4.244846 |  1.387330 | gvfs-helper  | label:(main)
+14:29:31.766620 run-command.c:721            | d3 | main                     | child_start  |     |  4.244928 |           |              | [ch1] class:cred argv:['git credential-manager-core store']
+14:29:31.829138 common-main.c:49             | d4 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:29:31.829138 common-main.c:50             | d4 | main                     | start        |     |  0.008014 |           |              | 'C:\Program Files\Git\mingw64\libexec\git-core\git.exe' credential-manager-core store
+14:29:31.844789 ..._win32_process_info.c:118 | d4 | main                     | data_json    | r0  |  0.025856 |  0.025856 | process      | windows/ancestry:["sh.exe","git-gvfs-helper.exe","git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:29:31.844789 git.c:817                    | d4 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_/gvfs-helper/_run_dashed_)
+14:29:31.844789 run-command.c:721            | d4 | main                     | child_start  |     |  0.027640 |           |              | [ch0] class:dashed argv:[git-credential-manager-core store]
+14:29:32.578791 run-command.c:977            | d4 | main                     | child_exit   |     |  0.762519 |  0.734879 |              | [ch0] pid:7088 code:0
+14:29:32.578791 wrapper.c:621                | d4 | main                     | data         | r0  |  0.762567 |  0.762567 | fsync        | fsync/writeout-only:0
+14:29:32.578791 wrapper.c:622                | d4 | main                     | data         | r0  |  0.762578 |  0.762578 | fsync        | fsync/hardware-flush:0
+14:29:32.578791 ..._win32_process_info.c:166 | d4 | main                     | data_json    | r0  |  0.762840 |  0.762840 | process      | windows/memory:{"PageFaultCount":4792,"PeakWorkingSetSize":7860224,"PeakPagefileUsage":3186688}
+14:29:32.578791 git.c:842                    | d4 | main                     | exit         |     |  0.762882 |           |              | code:0
+14:29:32.578791 trace2/tr2_tgt_perf.c:215    | d4 | main                     | atexit       |     |  0.762893 |           |              | code:0
+14:29:32.594463 run-command.c:977            | d3 | main                     | child_exit   |     |  5.071133 |  0.826205 |              | [ch1] pid:8464 code:0
+14:29:32.594463 gvfs-helper-client.c:560     | d1 | main                     | data         | r1  | 59.628087 |  5.040628 | gh-client    | ..prefetch/packfile_count:0
+14:29:32.594463 gvfs-helper-client.c:562     | d1 | main                     | region_leave | r1  | 59.628112 |  5.040653 | gh-client    | label:objects/prefetch
+14:29:32.594463 builtin/fetch.c:1649         | d1 | main                     | region_enter | r1  | 59.628872 |           | fetch        | label:remote_refs
+14:29:32.594463 run-command.c:721            | d1 | main                     | child_start  |     | 59.628925 |           |              | ..[ch1] class:remote-https argv:[git remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData]
+14:29:32.610089 common-main.c:49             | d2 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:29:32.610089 common-main.c:50             | d2 | main                     | start        |     |  0.005525 |           |              | git remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+14:29:32.610089 ..._win32_process_info.c:118 | d2 | main                     | data_json    | r0  |  0.016119 |  0.016119 | process      | windows/ancestry:["git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:29:32.610089 git.c:817                    | d2 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_)
+14:29:32.610089 run-command.c:721            | d2 | main                     | child_start  |     |  0.016827 |           |              | [ch0] class:dashed argv:[git-remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData]
+14:29:32.641269 common-main.c:49             | d3 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:29:32.641269 common-main.c:50             | d3 | main                     | start        |     |  0.006840 |           |              | git-remote-https origin https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData
+14:29:32.656927 ..._win32_process_info.c:118 | d3 | main                     | data_json    | r0  |  0.019319 |  0.019319 | process      | windows/ancestry:["git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:29:32.656927 repository.c:136             | d3 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:29:32.656927 remote-curl.c:1503           | d3 | main                     | cmd_name     |     |           |           |              | remote-curl (pull/fetch/_run_dashed_/remote-curl)
+14:29:34.516535 run-command.c:721            | d3 | main                     | child_start  |     |  1.892941 |           |              | [ch0] class:cred argv:['git credential-manager-core get']
+14:29:34.579077 common-main.c:49             | d4 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:29:34.579077 common-main.c:50             | d4 | main                     | start        |     |  0.006577 |           |              | 'C:\Program Files\Git\mingw64\libexec\git-core\git.exe' credential-manager-core get
+14:29:34.610274 ..._win32_process_info.c:118 | d4 | main                     | data_json    | r0  |  0.026641 |  0.026641 | process      | windows/ancestry:["sh.exe","git-remote-https.exe","git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:29:34.610274 git.c:817                    | d4 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_/remote-curl/_run_dashed_)
+14:29:34.610274 run-command.c:721            | d4 | main                     | child_start  |     |  0.027853 |           |              | [ch0] class:dashed argv:[git-credential-manager-core get]
+14:29:35.360145 run-command.c:977            | d4 | main                     | child_exit   |     |  0.779699 |  0.751846 |              | [ch0] pid:1092 code:0
+14:29:35.360145 wrapper.c:621                | d4 | main                     | data         | r0  |  0.779750 |  0.779750 | fsync        | fsync/writeout-only:0
+14:29:35.360145 wrapper.c:622                | d4 | main                     | data         | r0  |  0.779762 |  0.779762 | fsync        | fsync/hardware-flush:0
+14:29:35.360145 ..._win32_process_info.c:166 | d4 | main                     | data_json    | r0  |  0.780103 |  0.780103 | process      | windows/memory:{"PageFaultCount":4796,"PeakWorkingSetSize":7901184,"PeakPagefileUsage":3174400}
+14:29:35.360145 git.c:842                    | d4 | main                     | exit         |     |  0.780126 |           |              | code:0
+14:29:35.360145 trace2/tr2_tgt_perf.c:215    | d4 | main                     | atexit       |     |  0.780138 |           |              | code:0
+14:29:35.360145 run-command.c:977            | d3 | main                     | child_exit   |     |  2.735351 |  0.842410 |              | [ch0] pid:8868 code:0
+14:29:36.094920 run-command.c:721            | d3 | main                     | child_start  |     |  3.467541 |           |              | [ch1] class:cred argv:['git credential-manager-core store']
+14:29:36.157294 common-main.c:49             | d4 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:29:36.157294 common-main.c:50             | d4 | main                     | start        |     |  0.006694 |           |              | 'C:\Program Files\Git\mingw64\libexec\git-core\git.exe' credential-manager-core store
+14:29:36.188455 ..._win32_process_info.c:118 | d4 | main                     | data_json    | r0  |  0.027642 |  0.027642 | process      | windows/ancestry:["sh.exe","git-remote-https.exe","git.exe","git.exe","git.exe","git.exe","cmd.exe","explorer.exe"]
+14:29:36.188455 git.c:817                    | d4 | main                     | cmd_name     |     |           |           |              | _run_dashed_ (pull/fetch/_run_dashed_/remote-curl/_run_dashed_)
+14:29:36.188455 run-command.c:721            | d4 | main                     | child_start  |     |  0.028804 |           |              | [ch0] class:dashed argv:[git-credential-manager-core store]
+14:29:36.922544 run-command.c:977            | d4 | main                     | child_exit   |     |  0.761139 |  0.732335 |              | [ch0] pid:7668 code:0
+14:29:36.922544 wrapper.c:621                | d4 | main                     | data         | r0  |  0.761206 |  0.761206 | fsync        | fsync/writeout-only:0
+14:29:36.922544 wrapper.c:622                | d4 | main                     | data         | r0  |  0.761221 |  0.761221 | fsync        | fsync/hardware-flush:0
+14:29:36.922544 ..._win32_process_info.c:166 | d4 | main                     | data_json    | r0  |  0.761542 |  0.761542 | process      | windows/memory:{"PageFaultCount":4793,"PeakWorkingSetSize":7901184,"PeakPagefileUsage":3170304}
+14:29:36.922544 git.c:842                    | d4 | main                     | exit         |     |  0.761565 |           |              | code:0
+14:29:36.922544 trace2/tr2_tgt_perf.c:215    | d4 | main                     | atexit       |     |  0.761577 |           |              | code:0
+14:29:36.922544 run-command.c:977            | d3 | main                     | child_exit   |     |  4.293079 |  0.825538 |              | [ch1] pid:2264 code:0
+14:29:36.922544 connect.c:167                | d3 | main                     | data         |     |  4.293142 |  4.293142 | transfer     | negotiated-version:0
+14:29:36.922544 builtin/fetch.c:1652         | d1 | main                     | region_leave | r1  | 63.963880 |  4.335008 | fetch        | label:remote_refs
+14:29:36.922544 builtin/fetch.c:1365         | d1 | main                     | region_enter | r1  | 63.967203 |           | fetch        | label:consume_refs
+14:29:36.922544 usage.c:86                   | d1 | main                     | error        |     |           |           |              | ..fetch normally indicates which branches had a forced update,
+but that check has been disabled; to re-enable, use '--show-forced-updates'
+flag or run 'git config fetch.showForcedUpdates true'
+warning: fetch normally indicates which branches had a forced update,
+but that check has been disabled; to re-enable, use '--show-forced-updates'
+flag or run 'git config fetch.showForcedUpdates true'
+14:29:36.922544 builtin/fetch.c:1369         | d1 | main                     | region_leave | r1  | 63.968332 |  0.001129 | fetch        | label:consume_refs
+14:29:36.922544 wrapper.c:621                | d3 | main                     | data         | r1  |  4.299632 |  4.299632 | fsync        | fsync/writeout-only:0
+14:29:36.922544 wrapper.c:622                | d3 | main                     | data         | r1  |  4.299657 |  4.299657 | fsync        | fsync/hardware-flush:0
+14:29:36.922544 ..._win32_process_info.c:166 | d3 | main                     | data_json    | r1  |  4.300315 |  4.300315 | process      | windows/memory:{"PageFaultCount":5419,"PeakWorkingSetSize":12525568,"PeakPagefileUsage":4694016}
+14:29:36.922544 common-main.c:63             | d3 | main                     | exit         |     |  4.300341 |           |              | code:0
+14:29:36.938168 trace2/tr2_tgt_perf.c:215    | d3 | main                     | atexit       |     |  4.300614 |           |              | code:0
+14:29:36.938168 run-command.c:977            | d2 | main                     | child_exit   |     |  4.334715 |  4.317888 |              | [ch0] pid:7316 code:0
+14:29:36.938168 wrapper.c:621                | d2 | main                     | data         | r0  |  4.334778 |  4.334778 | fsync        | fsync/writeout-only:0
+14:29:36.938168 wrapper.c:622                | d2 | main                     | data         | r0  |  4.334788 |  4.334788 | fsync        | fsync/hardware-flush:0
+14:29:36.938168 ..._win32_process_info.c:166 | d2 | main                     | data_json    | r0  |  4.335107 |  4.335107 | process      | windows/memory:{"PageFaultCount":3923,"PeakWorkingSetSize":7917568,"PeakPagefileUsage":3198976}
+14:29:36.938168 git.c:842                    | d2 | main                     | exit         |     |  4.335129 |           |              | code:0
+14:29:36.938168 trace2/tr2_tgt_perf.c:215    | d2 | main                     | atexit       |     |  4.335140 |           |              | code:0
+14:29:36.938168 run-command.c:977            | d1 | main                     | child_exit   |     | 63.977957 |  4.349032 |              | [ch1] pid:6504 code:0
+14:31:23.063270 run-command.c:1790           | d1 | main                     | region_enter |     | 170.101514 |           | submodule    | label:parallel/fetch max:1
+14:31:23.078899 run-command.c:1796           | d1 | main                     | region_leave |     | 170.118388 |  0.016874 | submodule    | label:parallel/fetch
+14:31:23.078899 wrapper.c:621                | d1 | main                     | data         | r1  | 170.118483 | 170.118483 | fsync        | fsync/writeout-only:0
+14:31:23.078899 wrapper.c:622                | d1 | main                     | data         | r1  | 170.118495 | 170.118495 | fsync        | fsync/hardware-flush:0
+14:31:23.078899 ..._win32_process_info.c:166 | d1 | main                     | data_json    | r1  | 170.118847 | 170.118847 | process      | windows/memory:{"PageFaultCount":87654,"PeakWorkingSetSize":349483008,"PeakPagefileUsage":265916416}
+14:31:23.078899 git.c:794                    | d1 | main                     | exit         |     | 170.118872 |           |              | code:0
+14:31:23.078899 wrapper.c:621                | d3 | main                     | data         | r1  | 115.563833 | 115.563833 | fsync        | fsync/writeout-only:0
+14:31:23.078899 wrapper.c:622                | d3 | main                     | data         | r1  | 115.563876 | 115.563876 | fsync        | fsync/hardware-flush:0
+14:31:23.078899 ..._win32_process_info.c:166 | d3 | main                     | data_json    | r1  | 115.564146 | 115.564146 | process      | windows/memory:{"PageFaultCount":5588,"PeakWorkingSetSize":12750848,"PeakPagefileUsage":4837376}
+14:31:23.078899 common-main.c:63             | d3 | main                     | exit         |     | 115.564171 |           |              | code:0
+14:31:23.078899 trace2/tr2_tgt_perf.c:215    | d3 | main                     | atexit       |     | 115.564439 |           |              | code:0
+14:31:23.078899 run-command.c:977            | d2 | main                     | child_exit   |     | 115.606848 | 115.585044 |              | [ch0] pid:480 code:0
+14:31:23.078899 wrapper.c:621                | d2 | main                     | data         | r0  | 115.606915 | 115.606915 | fsync        | fsync/writeout-only:0
+14:31:23.078899 wrapper.c:622                | d2 | main                     | data         | r0  | 115.606933 | 115.606933 | fsync        | fsync/hardware-flush:0
+14:31:23.078899 ..._win32_process_info.c:166 | d2 | main                     | data_json    | r0  | 115.607231 | 115.607231 | process      | windows/memory:{"PageFaultCount":3927,"PeakWorkingSetSize":7843840,"PeakPagefileUsage":3178496}
+14:31:23.078899 git.c:842                    | d2 | main                     | exit         |     | 115.607254 |           |              | code:0
+14:31:23.078899 trace2/tr2_tgt_perf.c:215    | d2 | main                     | atexit       |     | 115.607266 |           |              | code:0
+14:31:23.094575 run-command.c:977            | d1 | main                     | child_exit   |     | 170.128237 | 115.623385 |              | [ch0] pid:5700 code:0
+14:31:23.094575 trace2/tr2_tgt_perf.c:215    | d1 | main                     | atexit       |     | 170.128287 |           |              | code:0
+14:31:23.110225 run-command.c:977            | d0 | main                     | child_exit   |     | 221.378942 | 170.167717 |              | [ch0] pid:7564 code:0
+14:31:23.110225 run-command.c:721            | d0 | main                     | child_start  |     | 221.381876 |           |              | [ch1] class:? argv:[git merge FETCH_HEAD]
+14:31:23.125771 common-main.c:49             | d1 | main                     | version      |     |           |           |              | 2.36.0.vfs.0.0
+14:31:23.125771 common-main.c:50             | d1 | main                     | start        |     |  0.005755 |           |              | git merge FETCH_HEAD
+14:31:23.141397 ..._win32_process_info.c:118 | d1 | main                     | data_json    | r0  |  0.017436 |  0.017436 | process      | windows/ancestry:["git.exe","git.exe","cmd.exe","explorer.exe"]
+14:31:23.141397 repository.c:136             | d1 | main                     | def_repo     | r1  |           |           |              | worktree:C:/Users/liuwn/Desktop/Git-2.36.0.vfs.0.0-64-bit/00/GendoxData/src
+14:31:23.141397 git.c:532                    | d1 | main                     | cmd_name     |     |           |           |              | merge (pull/merge)
+14:31:23.141397 read-cache.c:2468            | d1 | main                     | region_enter | r1  |  0.022659 |           | index        | label:do_read_index .git/index
+14:31:23.141397 read-cache.c:2128            | d1 | th01:load_index_extensio | thread_start |     |  0.023073 |           |              | 
+14:31:23.141397 read-cache.c:1853            | d1 | th01:load_index_extensio | region_enter |     |  0.023136 |           | index        | label:read/extension/cache_tree
+14:31:23.141397 cache-tree.c:688             | d1 | th01:load_index_extensio | region_enter | r1  |  0.023162 |           | cache_tree   | ..label:read
+14:31:23.141397 read-cache.c:2211            | d1 | th02:load_cache_entries  | thread_start |     |  0.023238 |           |              | 
+14:31:23.141397 read-cache.c:2211            | d1 | th03:load_cache_entries  | thread_start |     |  0.023351 |           |              | 
+14:31:23.141397 read-cache.c:2211            | d1 | th04:load_cache_entries  | thread_start |     |  0.023472 |           |              | 
+14:31:23.141397 read-cache.c:2211            | d1 | th05:load_cache_entries  | thread_start |     |  0.023612 |           |              | 
+14:31:23.141397 read-cache.c:2211            | d1 | th06:load_cache_entries  | thread_start |     |  0.023657 |           |              | 
+14:31:23.157023 cache-tree.c:690             | d1 | th01:load_index_extensio | region_leave | r1  |  0.031875 |  0.008713 | cache_tree   | ..label:read
+14:31:23.157023 read-cache.c:1855            | d1 | th01:load_index_extensio | data         |     |  0.031962 |  0.008826 | index        | ..read/extension/cache_tree/bytes:767846
+14:31:23.157023 read-cache.c:1856            | d1 | th01:load_index_extensio | region_leave |     |  0.031981 |  0.008845 | index        | label:read/extension/cache_tree
+14:31:23.157023 fsmonitor.c:94               | d1 | th01:load_index_extensio | data         |     |  0.032007 |  0.008934 | index        | extension/fsmn/read/token:builtin:0.9148.20231225T061501.313149Z:4
+14:31:23.157023 read-cache.c:2130            | d1 | th01:load_index_extensio | thread_exit  |     |  0.032132 |  0.009059 |              | 
+14:31:23.188276 read-cache.c:2220            | d1 | th06:load_cache_entries  | thread_exit  |     |  0.063345 |  0.039688 |              | 
+14:31:23.188276 read-cache.c:2220            | d1 | th02:load_cache_entries  | thread_exit  |     |  0.064136 |  0.040898 |              | 
+14:31:23.188276 read-cache.c:2220            | d1 | th04:load_cache_entries  | thread_exit  |     |  0.064336 |  0.040864 |              | 
+14:31:23.188276 read-cache.c:2220            | d1 | th03:load_cache_entries  | thread_exit  |     |  0.067721 |  0.044370 |              | 
+14:31:23.188276 read-cache.c:2220            | d1 | th05:load_cache_entries  | thread_exit  |     |  0.067994 |  0.044382 |              | 
+14:31:23.203898 read-cache.c:2414            | d1 | main                     | data         | r1  |  0.076212 |  0.053553 | index        | ..read/version:4
+14:31:23.203898 read-cache.c:2416            | d1 | main                     | data         | r1  |  0.076266 |  0.053607 | index        | ..read/cache_nr:1074121
+14:31:23.203898 read-cache.c:2473            | d1 | main                     | region_leave | r1  |  0.076286 |  0.053627 | index        | label:do_read_index .git/index
+14:31:23.235194 fsmonitor-ipc.c:80           | d1 | main                     | region_enter |     |  0.112397 |           | fsm_client   | label:query
+14:31:23.235194 fsmonitor-ipc.c:81           | d1 | main                     | data         |     |  0.112501 |  0.000104 | fsm_client   | ..query/command:builtin:0.9148.20231225T061501.313149Z:4
+14:31:23.235194 ...imple-ipc/ipc-win32.c:202 | d1 | main                     | region_enter |     |  0.112539 |           | ipc-client   | ..label:try-connect
+14:31:23.235194 ...imple-ipc/ipc-win32.c:203 | d1 | main                     | data         |     |  0.112556 |  0.000017 | ipc-client   | ....try-connect/path:.git/fsmonitor--daemon.ipc
+14:31:23.235194 ...imple-ipc/ipc-win32.c:211 | d1 | main                     | data         |     |  0.113237 |  0.000698 | ipc-client   | ....try-connect/state:0
+14:31:23.235194 ...imple-ipc/ipc-win32.c:213 | d1 | main                     | region_leave |     |  0.113284 |  0.000745 | ipc-client   | ..label:try-connect
+14:31:23.235194 ...imple-ipc/ipc-win32.c:243 | d1 | main                     | region_enter |     |  0.113297 |           | ipc-client   | ..label:send-command
+14:31:23.235194 ...imple-ipc/ipc-win32.c:262 | d1 | main                     | region_leave |     |  0.114943 |  0.001646 | ipc-client   | ..label:send-command
+14:31:23.235194 fsmonitor-ipc.c:93           | d1 | main                     | data         |     |  0.114995 |  0.002598 | fsm_client   | ..query/response-length:37988
+14:31:23.235194 fsmonitor-ipc.c:131          | d1 | main                     | region_leave |     |  0.115009 |  0.002612 | fsm_client   | label:query
+14:31:23.235194 fsmonitor.c:439              | d1 | main                     | region_enter | r1  |  0.115019 |           | fsmonitor    | label:apply_results
+14:31:23.282079 fsmonitor.c:469              | d1 | main                     | data         | r1  |  0.158502 |  0.043483 | fsmonitor    | ..apply_count:826
+14:31:23.282079 fsmonitor.c:500              | d1 | main                     | region_leave | r1  |  0.158559 |  0.043540 | fsmonitor    | label:apply_results
+Already up to date.
+14:32:19.172697 wrapper.c:621                | d1 | main                     | data         | r1  | 56.043689 | 56.043689 | fsync        | fsync/writeout-only:0
+14:32:19.172697 wrapper.c:622                | d1 | main                     | data         | r1  | 56.043714 | 56.043714 | fsync        | fsync/hardware-flush:0
+14:32:19.172697 ..._win32_process_info.c:166 | d1 | main                     | data_json    | r1  | 56.044023 | 56.044023 | process      | windows/memory:{"PageFaultCount":87632,"PeakWorkingSetSize":350568448,"PeakPagefileUsage":266833920}
+14:32:19.172697 git.c:794                    | d1 | main                     | exit         |     | 56.044055 |           |              | code:0
+14:32:19.172697 trace2/tr2_tgt_perf.c:215    | d1 | main                     | atexit       |     | 56.044142 |           |              | code:0
+14:32:19.188273 run-command.c:977            | d0 | main                     | child_exit   |     | 277.459407 | 56.077531 |              | [ch1] pid:4876 code:0
+14:32:19.188273 wrapper.c:621                | d0 | main                     | data         | r1  | 277.459618 | 277.459618 | fsync        | fsync/writeout-only:0
+14:32:19.188273 wrapper.c:622                | d0 | main                     | data         | r1  | 277.459632 | 277.459632 | fsync        | fsync/hardware-flush:0
+14:32:19.188273 ..._win32_process_info.c:166 | d0 | main                     | data_json    | r1  | 277.459972 | 277.459972 | process      | windows/memory:{"PageFaultCount":87290,"PeakWorkingSetSize":349605888,"PeakPagefileUsage":265973760}
+14:32:19.188273 git.c:794                    | d0 | main                     | exit         |     | 277.459992 |           |              | code:0
+14:32:19.188273 trace2/tr2_tgt_perf.c:215    | d0 | main                     | atexit       |     | 277.460002 |           |              | code:0
