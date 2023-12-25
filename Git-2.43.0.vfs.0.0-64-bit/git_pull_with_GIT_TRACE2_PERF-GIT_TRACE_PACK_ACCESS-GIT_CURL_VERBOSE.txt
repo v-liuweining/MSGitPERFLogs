@@ -1,3 +1,9 @@
+CMD:
+	set GIT_TRACE2_PERF=1
+	set GIT_TRACE_PACK_ACCESS=1
+	set GIT_CURL_VERBOSE=1
+	git pull
+
 14:08:10.266301 common-main.c:55             | d0 | main                     | version      |     |           |           |              | 2.43.0.vfs.0.0
 14:08:10.266301 common-main.c:56             | d0 | main                     | start        |     |  0.018124 |           |              | git.exe pull
 14:08:10.281936 ..._win32_process_info.c:120 | d0 | main                     | data_json    | r0  |  0.030450 |  0.030450 | process      | windows/ancestry:["git.exe","cmd.exe","explorer.exe"]

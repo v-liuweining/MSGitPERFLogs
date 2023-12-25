@@ -1,3 +1,7 @@
+CMD:
+	git config --list --show-origin
+
+
 file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
 file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
 file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
