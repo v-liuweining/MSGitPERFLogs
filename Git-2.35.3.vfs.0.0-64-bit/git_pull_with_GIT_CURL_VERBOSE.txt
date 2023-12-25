@@ -1,0 +1,481 @@
+13:38:24.844588 http.c:689              == Info:   Trying 13.107.42.18:443...
+13:38:24.844588 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+13:38:24.844588 http.c:689              == Info: ALPN, offering http/1.1
+13:38:24.844588 http.c:689              == Info:  CAfile: C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+13:38:24.844588 http.c:689              == Info:  CApath: none
+13:38:24.844588 http.c:689              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+13:38:25.485127 http.c:689              == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+13:38:25.485127 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Certificate (11):
+13:38:25.485127 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+13:38:25.485127 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server finished (14):
+13:38:25.485127 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+13:38:25.485127 http.c:689              == Info: TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+13:38:25.485127 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Finished (20):
+13:38:25.704196 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Finished (20):
+13:38:25.704196 http.c:689              == Info: SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+13:38:25.704196 http.c:689              == Info: ALPN, server accepted to use http/1.1
+13:38:25.704196 http.c:689              == Info: Server certificate:
+13:38:25.704196 http.c:689              == Info:  subject: C=US; ST=WA; L=Redmond; O=Microsoft Corporation; CN=visualstudio.com
+13:38:25.704196 http.c:689              == Info:  start date: Dec 23 06:01:12 2023 GMT
+13:38:25.704196 http.c:689              == Info:  expire date: Jun 20 06:01:12 2024 GMT
+13:38:25.704196 http.c:689              == Info:  subjectAltName: host "ointprotocol.visualstudio.com" matched cert's "*.visualstudio.com"
+13:38:25.704196 http.c:689              == Info:  issuer: C=US; O=Microsoft Corporation; CN=Microsoft Azure RSA TLS Issuing CA 03
+13:38:25.704196 http.c:689              == Info:  SSL certificate verify ok.
+13:38:25.704196 http.c:636              => Send header, 0000000265 bytes (0x00000109)
+13:38:25.704196 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/gvfs/prefetch?lastPackTimestamp=1703482464 HTTP/1.1
+13:38:25.704196 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+13:38:25.704196 http.c:648              => Send header: User-Agent: git/2.35.3.vfs.0.0
+13:38:25.704196 http.c:648              => Send header: X-TFS-FedAuthRedirect: Suppress
+13:38:25.704196 http.c:648              => Send header: Pragma: no-cache
+13:38:25.704196 http.c:648              => Send header: Accept: application/x-gvfs-timestamped-packfiles-indexes
+13:38:25.704196 http.c:648              => Send header:
+13:38:26.219439 http.c:689              == Info: Mark bundle as not supporting multiuse
+13:38:26.219439 http.c:636              <= Recv header, 0000000027 bytes (0x0000001b)
+13:38:26.219439 http.c:648              <= Recv header: HTTP/1.1 401 Unauthorized
+13:38:26.219439 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+13:38:26.219439 http.c:648              <= Recv header: Cache-Control: private
+13:38:26.219439 http.c:636              <= Recv header, 0000000021 bytes (0x00000015)
+13:38:26.219439 http.c:648              <= Recv header: Content-Length: 100
+13:38:26.219439 http.c:636              <= Recv header, 0000000041 bytes (0x00000029)
+13:38:26.219439 http.c:648              <= Recv header: Content-Type: text/plain; charset=utf-8
+13:38:26.219439 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+13:38:26.219439 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+13:38:26.219439 http.c:636              <= Recv header, 0000000115 bytes (0x00000073)
+13:38:26.219439 http.c:648              <= Recv header: WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+13:38:26.219439 http.c:636              <= Recv header, 0000000076 bytes (0x0000004c)
+13:38:26.219439 http.c:648              <= Recv header: WWW-Authenticate: Basic realm="https://tfsprodwus22.app.visualstudio.com/"
+13:38:26.219439 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:26.219439 http.c:648              <= Recv header: WWW-Authenticate: TFS-Federated
+13:38:26.219439 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+13:38:26.219439 http.c:648              <= Recv header: X-TFS-ProcessId: fa638072-54ff-445f-a54e-13cdcf374839
+13:38:26.219439 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:26.219439 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+13:38:26.219439 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+13:38:26.219439 http.c:648              <= Recv header: ActivityId: 088206d7-7075-498d-826d-f4f05aa49b98
+13:38:26.219439 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+13:38:26.219439 http.c:648              <= Recv header: X-TFS-Session: 088206d7-7075-498d-826d-f4f05aa49b98
+13:38:26.219439 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+13:38:26.219439 http.c:648              <= Recv header: X-VSS-E2EID: 088206d7-7075-498d-826d-f4f05aa49b98
+13:38:26.219439 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:26.219439 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+13:38:26.219439 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+13:38:26.219439 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+13:38:26.219439 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:26.219439 http.c:648              <= Recv header: X-TFS-FedAuthRealm: https://tfsprodwus22.app.visualstudio.com/
+13:38:26.219439 http.c:636              <= Recv header, 0000000061 bytes (0x0000003d)
+13:38:26.219439 http.c:648              <= Recv header: X-TFS-FedAuthIssuer: https://ointprotocol.visualstudio.com/
+13:38:26.219439 http.c:636              <= Recv header, 0000000075 bytes (0x0000004b)
+13:38:26.219439 http.c:648              <= Recv header: X-VSS-AuthorizationEndpoint: https://ointprotocol.vssps.visualstudio.com/
+13:38:26.219439 http.c:636              <= Recv header, 0000000060 bytes (0x0000003c)
+13:38:26.219439 http.c:648              <= Recv header: X-VSS-ResourceTenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
+13:38:26.219439 http.c:636              <= Recv header, 0000000710 bytes (0x000002c6)
+13:38:26.219439 http.c:648              <= Recv header: X-TFS-SoapException: %3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csoap%3AEnvelope%20xmlns%3Asoap%3D%22http%3A%2F%2Fwww.w3.org%2F2003%2F05%2Fsoap-envelope%22%3E%3Csoap%3ABody%3E%3Csoap%3AFault%3E%3Csoap%3ACode%3E%3Csoap%3AValue%3Esoap%3AReceiver%3C%2Fsoap%3AValue%3E%3Csoap%3ASubcode%3E%3Csoap%3AValue%3EUnauthorizedRequestException%3C%2Fsoap%3AValue%3E%3C%2Fsoap%3ASubcode%3E%3C%2Fsoap%3ACode%3E%3Csoap%3AReason%3E%3Csoap%3AText%20xml%3Alang%3D%22en%22%3ETF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.%3C%2Fsoap%3AText%3E%3C%2Fsoap%3AReason%3E%3C%2Fsoap%3AFault%3E%3C%2Fsoap%3ABody%3E%3C%2Fsoap%3AEnvelope%3E
+13:38:26.219439 http.c:636              <= Recv header, 0000000148 bytes (0x00000094)
+13:38:26.219439 http.c:648              <= Recv header: X-TFS-ServiceError: TF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.
+13:38:26.219439 http.c:636              <= Recv header, 0000000079 bytes (0x0000004f)
+13:38:26.219439 http.c:648              <= Recv header: X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+13:38:26.219439 http.c:636              <= Recv header, 0000000571 bytes (0x0000023b)
+13:38:26.219439 http.c:648              <= Recv header: X-TFS-FedAuthRedirect: https://spsprodwus21.vssps.visualstudio.com/_signin?realm=ointprotocol.visualstudio.com&reply_to=https%3A%2F%2Fointprotocol.visualstudio.com%2FGendoxData%2F_git%2FGendoxData%2Fgvfs%2Fprefetch%3FlastPackTimestamp%3D1703482464&redirect=1&hid=5fe04b63-037b-40a0-bb74-59bff9bb8bf0&context=eyJodCI6MiwiaGlkIjoiYWM2N2Y0ZjMtN2YzNy00ZmQ0LTlmZDItM2E2YzY1ZDMzZWQ4IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+13:38:26.219439 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+13:38:26.219439 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+13:38:26.219439 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+13:38:26.219439 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+13:38:26.219439 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:26.219439 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+13:38:26.219439 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+13:38:26.219439 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+13:38:26.219439 http.c:636              <= Recv header, 0000000102 bytes (0x00000066)
+13:38:26.219439 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: C09B42AD3C664311924E6C5121982DF4 Ref B: ATAEDGE1012 Ref C: 2023-12-25T05:38:25Z
+13:38:26.219439 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+13:38:26.219439 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 05:38:25 GMT
+13:38:26.219439 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+13:38:26.219439 http.c:648              <= Recv header:
+13:38:26.219439 http.c:689              == Info: Ignoring the response-body
+13:38:26.219439 http.c:689              == Info: Connection #0 to host ointprotocol.visualstudio.com left intact
+13:38:26.219439 http.c:689              == Info: Issue another request to this URL: 'https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData/gvfs/prefetch?lastPackTimestamp=1703482464'
+13:38:26.219439 http.c:689              == Info: Found bundle for host ointprotocol.visualstudio.com: 0x167c2e75140 [serially]
+13:38:26.219439 http.c:689              == Info: Re-using existing connection! (#0) with host ointprotocol.visualstudio.com
+13:38:26.219439 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+13:38:26.219439 http.c:689              == Info: Server auth using Basic with user ''
+13:38:26.235062 http.c:636              => Send header, 0000000292 bytes (0x00000124)
+13:38:26.235062 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/gvfs/prefetch?lastPackTimestamp=1703482464 HTTP/1.1
+13:38:26.235062 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+13:38:26.235062 http.c:648              => Send header: Authorization: Basic <redacted>
+13:38:26.235062 http.c:648              => Send header: User-Agent: git/2.35.3.vfs.0.0
+13:38:26.235062 http.c:648              => Send header: X-TFS-FedAuthRedirect: Suppress
+13:38:26.235062 http.c:648              => Send header: Pragma: no-cache
+13:38:26.235062 http.c:648              => Send header: Accept: application/x-gvfs-timestamped-packfiles-indexes
+13:38:26.235062 http.c:648              => Send header:
+13:38:26.516302 http.c:689              == Info: Mark bundle as not supporting multiuse
+13:38:26.516302 http.c:636              <= Recv header, 0000000027 bytes (0x0000001b)
+13:38:26.516302 http.c:648              <= Recv header: HTTP/1.1 401 Unauthorized
+13:38:26.516302 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+13:38:26.516302 http.c:648              <= Recv header: Cache-Control: private
+13:38:26.516302 http.c:636              <= Recv header, 0000000021 bytes (0x00000015)
+13:38:26.516302 http.c:648              <= Recv header: Content-Length: 100
+13:38:26.516302 http.c:636              <= Recv header, 0000000041 bytes (0x00000029)
+13:38:26.516302 http.c:648              <= Recv header: Content-Type: text/plain; charset=utf-8
+13:38:26.516302 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+13:38:26.516302 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+13:38:26.516302 http.c:636              <= Recv header, 0000000115 bytes (0x00000073)
+13:38:26.516302 http.c:648              <= Recv header: WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+13:38:26.516302 http.c:689              == Info: Authentication problem. Ignoring this.
+13:38:26.516302 http.c:636              <= Recv header, 0000000076 bytes (0x0000004c)
+13:38:26.516302 http.c:648              <= Recv header: WWW-Authenticate: Basic realm="https://tfsprodwus22.app.visualstudio.com/"
+13:38:26.516302 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:26.516302 http.c:648              <= Recv header: WWW-Authenticate: TFS-Federated
+13:38:26.516302 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+13:38:26.516302 http.c:648              <= Recv header: X-TFS-ProcessId: fa638072-54ff-445f-a54e-13cdcf374839
+13:38:26.516302 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:26.516302 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+13:38:26.516302 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+13:38:26.516302 http.c:648              <= Recv header: ActivityId: 088206fd-7075-498d-826d-f4f05aa49b98
+13:38:26.516302 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+13:38:26.516302 http.c:648              <= Recv header: X-TFS-Session: 088206fd-7075-498d-826d-f4f05aa49b98
+13:38:26.516302 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+13:38:26.516302 http.c:648              <= Recv header: X-VSS-E2EID: 088206fd-7075-498d-826d-f4f05aa49b98
+13:38:26.516302 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:26.516302 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+13:38:26.516302 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+13:38:26.516302 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+13:38:26.516302 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:26.516302 http.c:648              <= Recv header: X-TFS-FedAuthRealm: https://tfsprodwus22.app.visualstudio.com/
+13:38:26.516302 http.c:636              <= Recv header, 0000000061 bytes (0x0000003d)
+13:38:26.516302 http.c:648              <= Recv header: X-TFS-FedAuthIssuer: https://ointprotocol.visualstudio.com/
+13:38:26.516302 http.c:636              <= Recv header, 0000000075 bytes (0x0000004b)
+13:38:26.516302 http.c:648              <= Recv header: X-VSS-AuthorizationEndpoint: https://ointprotocol.vssps.visualstudio.com/
+13:38:26.516302 http.c:636              <= Recv header, 0000000060 bytes (0x0000003c)
+13:38:26.516302 http.c:648              <= Recv header: X-VSS-ResourceTenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
+13:38:26.516302 http.c:636              <= Recv header, 0000000710 bytes (0x000002c6)
+13:38:26.516302 http.c:648              <= Recv header: X-TFS-SoapException: %3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csoap%3AEnvelope%20xmlns%3Asoap%3D%22http%3A%2F%2Fwww.w3.org%2F2003%2F05%2Fsoap-envelope%22%3E%3Csoap%3ABody%3E%3Csoap%3AFault%3E%3Csoap%3ACode%3E%3Csoap%3AValue%3Esoap%3AReceiver%3C%2Fsoap%3AValue%3E%3Csoap%3ASubcode%3E%3Csoap%3AValue%3EUnauthorizedRequestException%3C%2Fsoap%3AValue%3E%3C%2Fsoap%3ASubcode%3E%3C%2Fsoap%3ACode%3E%3Csoap%3AReason%3E%3Csoap%3AText%20xml%3Alang%3D%22en%22%3ETF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.%3C%2Fsoap%3AText%3E%3C%2Fsoap%3AReason%3E%3C%2Fsoap%3AFault%3E%3C%2Fsoap%3ABody%3E%3C%2Fsoap%3AEnvelope%3E
+13:38:26.516302 http.c:636              <= Recv header, 0000000148 bytes (0x00000094)
+13:38:26.516302 http.c:648              <= Recv header: X-TFS-ServiceError: TF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.
+13:38:26.516302 http.c:636              <= Recv header, 0000000079 bytes (0x0000004f)
+13:38:26.516302 http.c:648              <= Recv header: X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+13:38:26.516302 http.c:636              <= Recv header, 0000000571 bytes (0x0000023b)
+13:38:26.516302 http.c:648              <= Recv header: X-TFS-FedAuthRedirect: https://spsprodwus21.vssps.visualstudio.com/_signin?realm=ointprotocol.visualstudio.com&reply_to=https%3A%2F%2Fointprotocol.visualstudio.com%2FGendoxData%2F_git%2FGendoxData%2Fgvfs%2Fprefetch%3FlastPackTimestamp%3D1703482464&redirect=1&hid=5fe04b63-037b-40a0-bb74-59bff9bb8bf0&context=eyJodCI6MiwiaGlkIjoiYWM2N2Y0ZjMtN2YzNy00ZmQ0LTlmZDItM2E2YzY1ZDMzZWQ4IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+13:38:26.516302 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+13:38:26.516302 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+13:38:26.516302 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+13:38:26.516302 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+13:38:26.516302 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:26.516302 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+13:38:26.516302 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+13:38:26.516302 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+13:38:26.516302 http.c:636              <= Recv header, 0000000102 bytes (0x00000066)
+13:38:26.516302 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: 83CFB54C2E6B45DC9E1A26E4B65488E3 Ref B: ATAEDGE1012 Ref C: 2023-12-25T05:38:26Z
+13:38:26.516302 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+13:38:26.516302 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 05:38:26 GMT
+13:38:26.516302 http.c:689              == Info: The requested URL returned error: 401
+13:38:26.516302 http.c:689              == Info: Closing connection 0
+13:38:26.516302 http.c:689              == Info: TLSv1.2 (OUT), TLS alert, close notify (256):
+13:38:27.016307 http.c:689              == Info: NTLM-proxy picked AND auth done set, clear picked!
+13:38:27.016307 http.c:689              == Info: Hostname ointprotocol.visualstudio.com was found in DNS cache
+13:38:27.016307 http.c:689              == Info:   Trying 13.107.42.18:443...
+13:38:27.016307 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#1)
+13:38:27.016307 http.c:689              == Info: ALPN, offering http/1.1
+13:38:27.031988 http.c:689              == Info:  CAfile: C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+13:38:27.031988 http.c:689              == Info:  CApath: none
+13:38:27.031988 http.c:689              == Info: SSL re-using session ID
+13:38:27.031988 http.c:689              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+13:38:27.625688 http.c:689              == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+13:38:27.625688 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Certificate (11):
+13:38:27.625688 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+13:38:27.625688 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server finished (14):
+13:38:27.625688 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+13:38:27.625688 http.c:689              == Info: TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+13:38:27.625688 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Finished (20):
+13:38:27.860286 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Finished (20):
+13:38:27.860286 http.c:689              == Info: old SSL session ID is stale, removing
+13:38:27.860286 http.c:689              == Info: SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+13:38:27.860286 http.c:689              == Info: ALPN, server accepted to use http/1.1
+13:38:27.860286 http.c:689              == Info: Server certificate:
+13:38:27.860286 http.c:689              == Info:  subject: C=US; ST=WA; L=Redmond; O=Microsoft Corporation; CN=visualstudio.com
+13:38:27.860286 http.c:689              == Info:  start date: Dec 23 06:01:12 2023 GMT
+13:38:27.860286 http.c:689              == Info:  expire date: Jun 20 06:01:12 2024 GMT
+13:38:27.860286 http.c:689              == Info:  subjectAltName: host "ointprotocol.visualstudio.com" matched cert's "*.visualstudio.com"
+13:38:27.860286 http.c:689              == Info:  issuer: C=US; O=Microsoft Corporation; CN=Microsoft Azure RSA TLS Issuing CA 03
+13:38:27.860286 http.c:689              == Info:  SSL certificate verify ok.
+13:38:27.860286 http.c:689              == Info: Server auth using Basic with user 'v-liuweining@microsoft.com'
+13:38:27.860286 http.c:636              => Send header, 0000000396 bytes (0x0000018c)
+13:38:27.860286 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/gvfs/prefetch?lastPackTimestamp=1703482464 HTTP/1.1
+13:38:27.860286 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+13:38:27.860286 http.c:648              => Send header: Authorization: Basic <redacted>
+13:38:27.860286 http.c:648              => Send header: User-Agent: git/2.35.3.vfs.0.0
+13:38:27.860286 http.c:648              => Send header: X-TFS-FedAuthRedirect: Suppress
+13:38:27.860286 http.c:648              => Send header: Pragma: no-cache
+13:38:27.860286 http.c:648              => Send header: Accept: application/x-gvfs-timestamped-packfiles-indexes
+13:38:27.860286 http.c:648              => Send header:
+13:38:28.496837 http.c:689              == Info: Mark bundle as not supporting multiuse
+13:38:28.496837 http.c:636              <= Recv header, 0000000017 bytes (0x00000011)
+13:38:28.496837 http.c:648              <= Recv header: HTTP/1.1 200 OK
+13:38:28.496837 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+13:38:28.496837 http.c:648              <= Recv header: Cache-Control: private
+13:38:28.496837 http.c:636              <= Recv header, 0000000028 bytes (0x0000001c)
+13:38:28.496837 http.c:648              <= Recv header: Transfer-Encoding: chunked
+13:38:28.496837 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+13:38:28.496837 http.c:648              <= Recv header: Content-Type: text/html
+13:38:28.496837 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+13:38:28.496837 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+13:38:28.496837 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+13:38:28.496837 http.c:648              <= Recv header: X-TFS-ProcessId: fa638072-54ff-445f-a54e-13cdcf374839
+13:38:28.496837 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:28.496837 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+13:38:28.496837 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+13:38:28.496837 http.c:648              <= Recv header: ActivityId: 08820539-7075-498d-826d-f4f05aa49b98
+13:38:28.496837 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+13:38:28.496837 http.c:648              <= Recv header: X-TFS-Session: 08820539-7075-498d-826d-f4f05aa49b98
+13:38:28.496837 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+13:38:28.496837 http.c:648              <= Recv header: X-VSS-E2EID: 08820539-7075-498d-826d-f4f05aa49b98
+13:38:28.496837 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:28.496837 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+13:38:28.496837 http.c:636              <= Recv header, 0000000081 bytes (0x00000051)
+13:38:28.496837 http.c:648              <= Recv header: X-VSS-UserData: d3402d7d-ac13-6e1e-9626-4d4b869a2f07:v-liuweining@microsoft.com
+13:38:28.496837 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+13:38:28.496837 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+13:38:28.496837 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+13:38:28.496837 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+13:38:28.496837 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+13:38:28.496837 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+13:38:28.496837 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:28.496837 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+13:38:28.496837 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+13:38:28.496837 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+13:38:28.496837 http.c:636              <= Recv header, 0000000106 bytes (0x0000006a)
+13:38:28.496837 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: FCE27679E3D542708347141A6A7F34AD Ref B: ATL331000103021 Ref C: 2023-12-25T05:38:28Z
+13:38:28.496837 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+13:38:28.496837 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 05:38:28 GMT
+13:38:28.496837 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+13:38:28.496837 http.c:648              <= Recv header:
+13:38:28.496837 http.c:689              == Info: Connection #1 to host ointprotocol.visualstudio.com left intact
+13:38:29.032022 http.c:689              == Info: Couldn't find host ointprotocol.visualstudio.com in the (nil) file; using defaults
+13:38:29.032022 http.c:689              == Info:   Trying 13.107.42.18:443...
+13:38:29.047553 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+13:38:29.047553 http.c:689              == Info: ALPN, offering http/1.1
+13:38:29.047553 http.c:689              == Info:  CAfile: C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+13:38:29.047553 http.c:689              == Info:  CApath: none
+13:38:29.047553 http.c:689              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+13:38:29.673076 http.c:689              == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+13:38:29.673076 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Certificate (11):
+13:38:29.673076 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+13:38:29.673076 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Server finished (14):
+13:38:29.673076 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+13:38:29.673076 http.c:689              == Info: TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+13:38:29.673076 http.c:689              == Info: TLSv1.2 (OUT), TLS handshake, Finished (20):
+13:38:29.891832 http.c:689              == Info: TLSv1.2 (IN), TLS handshake, Finished (20):
+13:38:29.891832 http.c:689              == Info: SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+13:38:29.891832 http.c:689              == Info: ALPN, server accepted to use http/1.1
+13:38:29.891832 http.c:689              == Info: Server certificate:
+13:38:29.891832 http.c:689              == Info:  subject: C=US; ST=WA; L=Redmond; O=Microsoft Corporation; CN=visualstudio.com
+13:38:29.891832 http.c:689              == Info:  start date: Dec 23 06:01:12 2023 GMT
+13:38:29.891832 http.c:689              == Info:  expire date: Jun 20 06:01:12 2024 GMT
+13:38:29.891832 http.c:689              == Info:  subjectAltName: host "ointprotocol.visualstudio.com" matched cert's "*.visualstudio.com"
+13:38:29.891832 http.c:689              == Info:  issuer: C=US; O=Microsoft Corporation; CN=Microsoft Azure RSA TLS Issuing CA 03
+13:38:29.891832 http.c:689              == Info:  SSL certificate verify ok.
+13:38:29.891832 http.c:636              => Send header, 0000000245 bytes (0x000000f5)
+13:38:29.891832 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/info/refs?service=git-upload-pack HTTP/1.1
+13:38:29.891832 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+13:38:29.891832 http.c:648              => Send header: User-Agent: git/2.35.3.vfs.0.0
+13:38:29.891832 http.c:648              => Send header: Accept: */*
+13:38:29.891832 http.c:648              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+13:38:29.891832 http.c:648              => Send header: Pragma: no-cache
+13:38:29.891832 http.c:648              => Send header: Git-Protocol: version=2
+13:38:29.891832 http.c:648              => Send header:
+13:38:30.454321 http.c:689              == Info: Mark bundle as not supporting multiuse
+13:38:30.454321 http.c:636              <= Recv header, 0000000027 bytes (0x0000001b)
+13:38:30.454321 http.c:648              <= Recv header: HTTP/1.1 401 Unauthorized
+13:38:30.454321 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+13:38:30.454321 http.c:648              <= Recv header: Cache-Control: private
+13:38:30.454321 http.c:636              <= Recv header, 0000000023 bytes (0x00000017)
+13:38:30.454321 http.c:648              <= Recv header: Content-Length: 89612
+13:38:30.454321 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+13:38:30.454321 http.c:648              <= Recv header: Content-Type: text/html
+13:38:30.454321 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+13:38:30.454321 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+13:38:30.454321 http.c:636              <= Recv header, 0000000115 bytes (0x00000073)
+13:38:30.454321 http.c:648              <= Recv header: WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+13:38:30.454321 http.c:636              <= Recv header, 0000000076 bytes (0x0000004c)
+13:38:30.454321 http.c:648              <= Recv header: WWW-Authenticate: Basic realm="https://tfsprodwus22.app.visualstudio.com/"
+13:38:30.454321 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:30.454321 http.c:648              <= Recv header: WWW-Authenticate: TFS-Federated
+13:38:30.454321 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+13:38:30.454321 http.c:648              <= Recv header: X-TFS-ProcessId: bc301191-e3ee-4dbc-8cb7-15b1c932aaa7
+13:38:30.454321 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:30.454321 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+13:38:30.454321 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+13:38:30.454321 http.c:648              <= Recv header: ActivityId: dd3ac2dc-faf2-4a07-bd8c-d36589e8074b
+13:38:30.454321 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+13:38:30.454321 http.c:648              <= Recv header: X-TFS-Session: dd3ac2dc-faf2-4a07-bd8c-d36589e8074b
+13:38:30.454321 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+13:38:30.454321 http.c:648              <= Recv header: X-VSS-E2EID: dd3ac2dc-faf2-4a07-bd8c-d36589e8074b
+13:38:30.454321 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:30.454321 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+13:38:30.454321 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+13:38:30.454321 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+13:38:30.454321 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:30.454321 http.c:648              <= Recv header: X-TFS-FedAuthRealm: https://tfsprodwus22.app.visualstudio.com/
+13:38:30.454321 http.c:636              <= Recv header, 0000000061 bytes (0x0000003d)
+13:38:30.454321 http.c:648              <= Recv header: X-TFS-FedAuthIssuer: https://ointprotocol.visualstudio.com/
+13:38:30.454321 http.c:636              <= Recv header, 0000000075 bytes (0x0000004b)
+13:38:30.454321 http.c:648              <= Recv header: X-VSS-AuthorizationEndpoint: https://ointprotocol.vssps.visualstudio.com/
+13:38:30.454321 http.c:636              <= Recv header, 0000000060 bytes (0x0000003c)
+13:38:30.454321 http.c:648              <= Recv header: X-VSS-ResourceTenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
+13:38:30.454321 http.c:636              <= Recv header, 0000000710 bytes (0x000002c6)
+13:38:30.454321 http.c:648              <= Recv header: X-TFS-SoapException: %3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csoap%3AEnvelope%20xmlns%3Asoap%3D%22http%3A%2F%2Fwww.w3.org%2F2003%2F05%2Fsoap-envelope%22%3E%3Csoap%3ABody%3E%3Csoap%3AFault%3E%3Csoap%3ACode%3E%3Csoap%3AValue%3Esoap%3AReceiver%3C%2Fsoap%3AValue%3E%3Csoap%3ASubcode%3E%3Csoap%3AValue%3EUnauthorizedRequestException%3C%2Fsoap%3AValue%3E%3C%2Fsoap%3ASubcode%3E%3C%2Fsoap%3ACode%3E%3Csoap%3AReason%3E%3Csoap%3AText%20xml%3Alang%3D%22en%22%3ETF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.%3C%2Fsoap%3AText%3E%3C%2Fsoap%3AReason%3E%3C%2Fsoap%3AFault%3E%3C%2Fsoap%3ABody%3E%3C%2Fsoap%3AEnvelope%3E
+13:38:30.454321 http.c:636              <= Recv header, 0000000148 bytes (0x00000094)
+13:38:30.454321 http.c:648              <= Recv header: X-TFS-ServiceError: TF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.
+13:38:30.454321 http.c:636              <= Recv header, 0000000079 bytes (0x0000004f)
+13:38:30.454321 http.c:648              <= Recv header: X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+13:38:30.454321 http.c:636              <= Recv header, 0000000562 bytes (0x00000232)
+13:38:30.454321 http.c:648              <= Recv header: X-TFS-FedAuthRedirect: https://spsprodwus21.vssps.visualstudio.com/_signin?realm=ointprotocol.visualstudio.com&reply_to=https%3A%2F%2Fointprotocol.visualstudio.com%2FGendoxData%2F_git%2FGendoxData%2Finfo%2Frefs%3Fservice%3Dgit-upload-pack&redirect=1&hid=5fe04b63-037b-40a0-bb74-59bff9bb8bf0&context=eyJodCI6MiwiaGlkIjoiYWM2N2Y0ZjMtN2YzNy00ZmQ0LTlmZDItM2E2YzY1ZDMzZWQ4IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+13:38:30.454321 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+13:38:30.454321 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+13:38:30.454321 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+13:38:30.454321 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+13:38:30.454321 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:30.454321 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+13:38:30.454321 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+13:38:30.454321 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+13:38:30.454321 http.c:636              <= Recv header, 0000000102 bytes (0x00000066)
+13:38:30.454321 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: 20BA4509B70A430389F22C5F1D38B71A Ref B: ATAEDGE0911 Ref C: 2023-12-25T05:38:30Z
+13:38:30.454321 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+13:38:30.454321 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 05:38:29 GMT
+13:38:30.454321 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+13:38:30.454321 http.c:648              <= Recv header:
+13:38:30.829364 http.c:689              == Info: Connection #0 to host ointprotocol.visualstudio.com left intact
+13:38:31.313203 http.c:689              == Info: Found bundle for host ointprotocol.visualstudio.com: 0x19e37968f60 [serially]
+13:38:31.313203 http.c:689              == Info: Re-using existing connection! (#0) with host ointprotocol.visualstudio.com
+13:38:31.313203 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+13:38:31.313203 http.c:636              => Send header, 0000000245 bytes (0x000000f5)
+13:38:31.313203 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/info/refs?service=git-upload-pack HTTP/1.1
+13:38:31.313203 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+13:38:31.313203 http.c:648              => Send header: User-Agent: git/2.35.3.vfs.0.0
+13:38:31.313203 http.c:648              => Send header: Accept: */*
+13:38:31.313203 http.c:648              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+13:38:31.313203 http.c:648              => Send header: Pragma: no-cache
+13:38:31.313203 http.c:648              => Send header: Git-Protocol: version=2
+13:38:31.313203 http.c:648              => Send header:
+13:38:31.598141 http.c:689              == Info: Mark bundle as not supporting multiuse
+13:38:31.598141 http.c:636              <= Recv header, 0000000027 bytes (0x0000001b)
+13:38:31.598141 http.c:648              <= Recv header: HTTP/1.1 401 Unauthorized
+13:38:31.598141 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+13:38:31.598141 http.c:648              <= Recv header: Cache-Control: private
+13:38:31.598141 http.c:636              <= Recv header, 0000000023 bytes (0x00000017)
+13:38:31.598141 http.c:648              <= Recv header: Content-Length: 89612
+13:38:31.598141 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+13:38:31.598141 http.c:648              <= Recv header: Content-Type: text/html
+13:38:31.598141 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+13:38:31.598141 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+13:38:31.598141 http.c:636              <= Recv header, 0000000115 bytes (0x00000073)
+13:38:31.598141 http.c:648              <= Recv header: WWW-Authenticate: Bearer authorization_uri=https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+13:38:31.598141 http.c:636              <= Recv header, 0000000076 bytes (0x0000004c)
+13:38:31.598141 http.c:648              <= Recv header: WWW-Authenticate: Basic realm="https://tfsprodwus22.app.visualstudio.com/"
+13:38:31.598141 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:31.598141 http.c:648              <= Recv header: WWW-Authenticate: TFS-Federated
+13:38:31.598141 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+13:38:31.598141 http.c:648              <= Recv header: X-TFS-ProcessId: bc301191-e3ee-4dbc-8cb7-15b1c932aaa7
+13:38:31.598141 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:31.598141 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+13:38:31.598141 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+13:38:31.598141 http.c:648              <= Recv header: ActivityId: dd3ac320-faf2-4a07-bd8c-d36589e8074b
+13:38:31.598141 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+13:38:31.598141 http.c:648              <= Recv header: X-TFS-Session: dd3ac320-faf2-4a07-bd8c-d36589e8074b
+13:38:31.598141 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+13:38:31.598141 http.c:648              <= Recv header: X-VSS-E2EID: dd3ac320-faf2-4a07-bd8c-d36589e8074b
+13:38:31.598141 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:31.598141 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+13:38:31.598141 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+13:38:31.598141 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+13:38:31.598141 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:31.598141 http.c:648              <= Recv header: X-TFS-FedAuthRealm: https://tfsprodwus22.app.visualstudio.com/
+13:38:31.598141 http.c:636              <= Recv header, 0000000061 bytes (0x0000003d)
+13:38:31.598141 http.c:648              <= Recv header: X-TFS-FedAuthIssuer: https://ointprotocol.visualstudio.com/
+13:38:31.598141 http.c:636              <= Recv header, 0000000075 bytes (0x0000004b)
+13:38:31.598141 http.c:648              <= Recv header: X-VSS-AuthorizationEndpoint: https://ointprotocol.vssps.visualstudio.com/
+13:38:31.598141 http.c:636              <= Recv header, 0000000060 bytes (0x0000003c)
+13:38:31.598141 http.c:648              <= Recv header: X-VSS-ResourceTenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
+13:38:31.598141 http.c:636              <= Recv header, 0000000710 bytes (0x000002c6)
+13:38:31.598141 http.c:648              <= Recv header: X-TFS-SoapException: %3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csoap%3AEnvelope%20xmlns%3Asoap%3D%22http%3A%2F%2Fwww.w3.org%2F2003%2F05%2Fsoap-envelope%22%3E%3Csoap%3ABody%3E%3Csoap%3AFault%3E%3Csoap%3ACode%3E%3Csoap%3AValue%3Esoap%3AReceiver%3C%2Fsoap%3AValue%3E%3Csoap%3ASubcode%3E%3Csoap%3AValue%3EUnauthorizedRequestException%3C%2Fsoap%3AValue%3E%3C%2Fsoap%3ASubcode%3E%3C%2Fsoap%3ACode%3E%3Csoap%3AReason%3E%3Csoap%3AText%20xml%3Alang%3D%22en%22%3ETF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.%3C%2Fsoap%3AText%3E%3C%2Fsoap%3AReason%3E%3C%2Fsoap%3AFault%3E%3C%2Fsoap%3ABody%3E%3C%2Fsoap%3AEnvelope%3E
+13:38:31.598141 http.c:636              <= Recv header, 0000000148 bytes (0x00000094)
+13:38:31.598141 http.c:648              <= Recv header: X-TFS-ServiceError: TF400813%3A%20The%20user%20%27aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27%20is%20not%20authorized%20to%20access%20this%20resource.
+13:38:31.598141 http.c:636              <= Recv header, 0000000079 bytes (0x0000004f)
+13:38:31.598141 http.c:648              <= Recv header: X-VSS-S2STargetService: 00000002-0000-8888-8000-000000000000/visualstudio.com
+13:38:31.598141 http.c:636              <= Recv header, 0000000562 bytes (0x00000232)
+13:38:31.598141 http.c:648              <= Recv header: X-TFS-FedAuthRedirect: https://spsprodwus21.vssps.visualstudio.com/_signin?realm=ointprotocol.visualstudio.com&reply_to=https%3A%2F%2Fointprotocol.visualstudio.com%2FGendoxData%2F_git%2FGendoxData%2Finfo%2Frefs%3Fservice%3Dgit-upload-pack&redirect=1&hid=5fe04b63-037b-40a0-bb74-59bff9bb8bf0&context=eyJodCI6MiwiaGlkIjoiYWM2N2Y0ZjMtN2YzNy00ZmQ0LTlmZDItM2E2YzY1ZDMzZWQ4IiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2
+13:38:31.598141 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+13:38:31.598141 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+13:38:31.598141 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+13:38:31.598141 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+13:38:31.598141 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:31.598141 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+13:38:31.598141 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+13:38:31.598141 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+13:38:31.598141 http.c:636              <= Recv header, 0000000102 bytes (0x00000066)
+13:38:31.598141 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: 962CF39CDB81483D84F2A2AE72445A54 Ref B: ATAEDGE0911 Ref C: 2023-12-25T05:38:31Z
+13:38:31.598141 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+13:38:31.598141 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 05:38:31 GMT
+13:38:31.598141 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+13:38:31.598141 http.c:648              <= Recv header:
+13:38:31.598141 http.c:689              == Info: Ignoring the response-body
+13:38:31.766590 http.c:689              == Info: Connection #0 to host ointprotocol.visualstudio.com left intact
+13:38:31.766590 http.c:689              == Info: Issue another request to this URL: 'https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData/info/refs?service=git-upload-pack'
+13:38:31.766590 http.c:689              == Info: Found bundle for host ointprotocol.visualstudio.com: 0x19e37968f60 [serially]
+13:38:31.766590 http.c:689              == Info: Re-using existing connection! (#0) with host ointprotocol.visualstudio.com
+13:38:31.766590 http.c:689              == Info: Connected to ointprotocol.visualstudio.com (13.107.42.18) port 443 (#0)
+13:38:31.766590 http.c:689              == Info: Server auth using Basic with user 'v-liuweining@microsoft.com'
+13:38:31.766590 http.c:636              => Send header, 0000000376 bytes (0x00000178)
+13:38:31.766590 http.c:648              => Send header: GET /GendoxData/_git/GendoxData/info/refs?service=git-upload-pack HTTP/1.1
+13:38:31.766590 http.c:648              => Send header: Host: ointprotocol.visualstudio.com
+13:38:31.766590 http.c:648              => Send header: Authorization: Basic <redacted>
+13:38:31.766590 http.c:648              => Send header: User-Agent: git/2.35.3.vfs.0.0
+13:38:31.766590 http.c:648              => Send header: Accept: */*
+13:38:31.766590 http.c:648              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+13:38:31.766590 http.c:648              => Send header: Pragma: no-cache
+13:38:31.766590 http.c:648              => Send header: Git-Protocol: version=2
+13:38:31.766590 http.c:648              => Send header:
+13:38:32.063657 http.c:689              == Info: Mark bundle as not supporting multiuse
+13:38:32.063657 http.c:636              <= Recv header, 0000000017 bytes (0x00000011)
+13:38:32.063657 http.c:648              <= Recv header: HTTP/1.1 200 OK
+13:38:32.063657 http.c:636              <= Recv header, 0000000024 bytes (0x00000018)
+13:38:32.063657 http.c:648              <= Recv header: Cache-Control: private
+13:38:32.063657 http.c:636              <= Recv header, 0000000022 bytes (0x00000016)
+13:38:32.063657 http.c:648              <= Recv header: Content-Length: 1479
+13:38:32.063657 http.c:636              <= Recv header, 0000000059 bytes (0x0000003b)
+13:38:32.063657 http.c:648              <= Recv header: Content-Type: application/x-git-upload-pack-advertisement
+13:38:32.063657 http.c:636              <= Recv header, 0000000124 bytes (0x0000007c)
+13:38:32.063657 http.c:648              <= Recv header: P3P: CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+13:38:32.063657 http.c:636              <= Recv header, 0000000055 bytes (0x00000037)
+13:38:32.063657 http.c:648              <= Recv header: X-TFS-ProcessId: bc301191-e3ee-4dbc-8cb7-15b1c932aaa7
+13:38:32.063657 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:32.063657 http.c:648              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains
+13:38:32.063657 http.c:636              <= Recv header, 0000000050 bytes (0x00000032)
+13:38:32.063657 http.c:648              <= Recv header: ActivityId: dd3ac3f3-faf2-4a07-bd8c-d36589e8074b
+13:38:32.063657 http.c:636              <= Recv header, 0000000053 bytes (0x00000035)
+13:38:32.063657 http.c:648              <= Recv header: X-TFS-Session: dd3ac3f3-faf2-4a07-bd8c-d36589e8074b
+13:38:32.063657 http.c:636              <= Recv header, 0000000051 bytes (0x00000033)
+13:38:32.063657 http.c:648              <= Recv header: X-VSS-E2EID: dd3ac3f3-faf2-4a07-bd8c-d36589e8074b
+13:38:32.063657 http.c:636              <= Recv header, 0000000064 bytes (0x00000040)
+13:38:32.063657 http.c:648              <= Recv header: X-VSS-SenderDeploymentId: ef3c8257-95f0-6581-5847-5a7fe375d050
+13:38:32.063657 http.c:636              <= Recv header, 0000000081 bytes (0x00000051)
+13:38:32.063657 http.c:648              <= Recv header: X-VSS-UserData: d3402d7d-ac13-6e1e-9626-4d4b869a2f07:v-liuweining@microsoft.com
+13:38:32.063657 http.c:636              <= Recv header, 0000000029 bytes (0x0000001d)
+13:38:32.063657 http.c:648              <= Recv header: X-FRAME-OPTIONS: SAMEORIGIN
+13:38:32.063657 http.c:636              <= Recv header, 0000000068 bytes (0x00000044)
+13:38:32.063657 http.c:648              <= Recv header: Request-Context: appId=cid-v1:4cf0000f-a530-4b17-b1fd-46511d3e2339
+13:38:32.063657 http.c:636              <= Recv header, 0000000048 bytes (0x00000030)
+13:38:32.063657 http.c:648              <= Recv header: Access-Control-Expose-Headers: Request-Context
+13:38:32.063657 http.c:636              <= Recv header, 0000000033 bytes (0x00000021)
+13:38:32.063657 http.c:648              <= Recv header: X-Content-Type-Options: nosniff
+13:38:32.063657 http.c:636              <= Recv header, 0000000025 bytes (0x00000019)
+13:38:32.063657 http.c:648              <= Recv header: X-Cache: CONFIG_NOCACHE
+13:38:32.063657 http.c:636              <= Recv header, 0000000102 bytes (0x00000066)
+13:38:32.063657 http.c:648              <= Recv header: X-MSEdge-Ref: Ref A: 4F081C3E5FE54FB7BC61C92CF6398049 Ref B: ATAEDGE0911 Ref C: 2023-12-25T05:38:31Z
+13:38:32.063657 http.c:636              <= Recv header, 0000000037 bytes (0x00000025)
+13:38:32.063657 http.c:648              <= Recv header: Date: Mon, 25 Dec 2023 05:38:31 GMT
+13:38:32.063657 http.c:636              <= Recv header, 0000000002 bytes (0x00000002)
+13:38:32.063657 http.c:648              <= Recv header:
+13:38:32.063657 http.c:689              == Info: Connection #0 to host ointprotocol.visualstudio.com left intact
+warning: fetch normally indicates which branches had a forced update,
+but that check has been disabled; to re-enable, use '--show-forced-updates'
+flag or run 'git config fetch.showForcedUpdates true'
+Already up to date.

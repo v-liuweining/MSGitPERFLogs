@@ -1,0 +1,7 @@
+git version 2.35.3.vfs.0.0
+cpu: x86_64
+built from commit: d34442f3ab072056eab72131c02abcf76b32d827
+sizeof-long: 4
+sizeof-size_t: 8
+shell-path: /bin/sh
+feature: fsmonitor--daemon
