@@ -7,6 +7,8 @@
 
  - Which version of `microsoft/git` are you using? Is it 32-bit or 64-bit?
 
+64-bit
+
 ```
 $ git --version --build-options
 
