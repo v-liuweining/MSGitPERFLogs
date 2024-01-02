@@ -1,0 +1,38 @@
+Initialize Local Repo:
+	scalar.exe clone --local-cache-path C:/Users/liuwn/Desktop/Git-2.35.3.vfs.0.0-64-bit/00/.scalarCache https://ointprotocol.visualstudio.com/GendoxData/_git/GendoxData --branch gendox
+	git.exe sparse-checkout init --no-cone
+	git.exe sparse-checkout set
+	git.exe sparse-checkout add  "Test_Teams/Common/bin"
+	git.exe sparse-checkout add  "Test_Teams/Common/Shared/DocumentContent/Templates"
+	git.exe sparse-checkout add  "Test_Teams/Common/Shared/LinkCollections"
+	git.exe sparse-checkout add  "Test_Teams/Common/Shared/S-Books"
+	git.exe sparse-checkout add  "Test_Teams/office/Future/books/*/Book.xml"
+
+	# of checkouted files: 599
+	# of Server files:  >962000
+
+
+######
+Commands for testing:
+
+	git config --list --show-origin > C:\Users\liuwn\Desktop\logs\MSGitPERFLogs\Git-2.36.0.vfs.0.0-64-bit\git_config_list_show_origin.txt 2>&1
+	git --version --build-options > C:\Users\liuwn\Desktop\logs\MSGitPERFLogs\Git-2.36.0.vfs.0.0-64-bit\git_version_build_options.txt 2>&1
+	type "C:\Program Files\Git\etc\install-options.txt" > C:\Users\liuwn\Desktop\logs\MSGitPERFLogs\Git-2.36.0.vfs.0.0-64-bit\install-options.txt 2>&1
+
+
+	set GIT_CURL_VERBOSE=1
+	git pull > C:\Users\liuwn\Desktop\logs\MSGitPERFLogs\Git-2.36.0.vfs.0.0-64-bit\git_pull_with_GIT_CURL_VERBOSE.txt 2>&1
+
+	set GIT_TRACE2_PERF=1
+	git pull > C:\Users\liuwn\Desktop\logs\MSGitPERFLogs\Git-2.36.0.vfs.0.0-64-bit\git_pull_with_GIT_TRACE2_PERF.txt 2>&1
+
+
+	set GIT_TRACE=1
+	set GIT_TRACE_PACK_ACCESS=1
+	git pull > C:\Users\liuwn\Desktop\logs\MSGitPERFLogs\Git-2.36.0.vfs.0.0-64-bit\git_pull_with_GIT_TRACE_GIT_TRACE_PACK_ACCESS.txt 2>&1
+
+	set GIT_TRACE2_PERF=1
+	set GIT_TRACE_PACK_ACCESS=1
+	set GIT_CURL_VERBOSE=1
+	git pull > C:\Users\liuwn\Desktop\logs\MSGitPERFLogs\Git-2.36.0.vfs.0.0-64-bit\git_pull_with_GIT_TRACE2_PERF-GIT_TRACE_PACK_ACCESS-GIT_CURL_VERBOSE.txt 2>&1
+
